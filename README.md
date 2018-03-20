@@ -1,10 +1,9 @@
-# Resume Page Website
+# Bootstrap Exercise Website
 ![alt text](assets/images/bootstrap-readme-image.jpg)
 
 ## Getting Started
 
-My resume Page website is my project to create a website from my professional resume which is in text/.doc format into a single page application(SPA). 
-
+My Bootstrap exercise website is a project to create a website from several psd images for a bootstrap website and to implement that into several html pages rendered by bootstrap, css and html. 
 To start making changes to this repo you first have to clone the repo.
 
 
