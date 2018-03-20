@@ -7,60 +7,132 @@
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <link rel="stylesheet" type="text/css" href="css/styles.css" />
         <link rel="stylesheet" type="text/css" href="css/bootstrap/bootstrap.min.css" />
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     </head>
-    <body>
-        <!-- nav bar -->
-        <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-            <a class="navbar-brand" href="#">Bootstrappers</a>
-            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            
-            <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                <ul class="navbar-nav mr-auto">
-                <li class="nav-item active">
-                    <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="#">About Us</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="#">Products</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="#">Gallery</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="#">News Detail</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="#">Contact</a>
-                </li>
-
-
-                </ul>
-                <form class="form-inline my-2 my-lg-0">
-                <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
-                <button class="btn btn-outline-primary my-2 my-sm-0" type="submit">Search</button>
-                </form>
+    
+    <body >
+        <div class="container-fluid">
+            <div class="hotel-icon-container">
+                <a class="navbar-brand" href="#">Hotel Icon
+                    <img src="asimages/hotel-icon.jpg" alt="">
+                </a>
             </div>
-        </nav>
-        <!-- End of Footer -->
+            
+            <!-- 1st nav bar -->
+            <nav class="navbar nav-one-container navbar-expand-lg">
+               
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav mr-auto">
+                        <li class="nav-item active nav-one">
+                            <a class="nav-link email" href="#">Info@hellphelp.com <span class="sr-only"></span></a>
+                        </li>
+                        <li class="nav-item nav-one">
+                            <a class="nav-link phone-number" href="#">+440 8753699208</a>
+                        </li>
+                        <li class="nav-item nav-one">
+                            <a class="nav-link log-in" href="#">Log In ></a>
+                        </li>
+                        <li class="nav-item dropdown products nav-one">
+                                <a class="nav-link dropdown-toggle language" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                    EN V
+                                </a>
+                                <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                    <a class="dropdown-item" href="#">SP</a>
+                                    <a class="dropdown-item" href="#">FR</a>
+                                    <a class="dropdown-item" href="#">IT</a>
+                                    <a class="dropdown-item" href="#">PR</a>
+                                    <div class="dropdown-divider"></div>
+                                    <a class="dropdown-item" href="#">JP</a>
+                                </div>
+                            </li>
+                            <li class="nav-item nav-one social-media">
+                                <a href="#"><i class="fa fa-facebook"></i></a> 
+                                <a href="#"><i class="fa fa-twitter"></i></a> 
+                                <a href="#"><i class="fa fa-instagram"></i></a> 
+                                <a href="#"><i class="fa fa-envelope"></i></a> 
+                            </li>
+                    </ul>
+                </div>
+            </nav>
+            <!-- End of 1st Footer -->
+    
+            <!-- 2nd nav bar -->
+            <nav class="navbar nav-two-container navbar-expand-lg">
+                <p class="nav-icon-container">
+                    <p></p>
+                    <p></p>
+                </p>
+                <a class="navbar-brand" href="#">Bootstrappers</a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav mr-auto">
+                        <li class="nav-item active nav-two">
+                            <a class="nav-link home" href="#">Home <span class="sr-only">(current)</span></a>
+                        </li>
+                        <li class="nav-item nav-two">
+                            <a class="nav-link aboutus" href="aboutus.html">About Us</a>
+                        </li>
+                        <li class="nav-item dropdown services nav-two">
+                            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                Services
+                            </a>
+                            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                <a class="dropdown-item" href="#">Action</a>
+                                <a class="dropdown-item" href="#">Another action</a>
+                                <div class="dropdown-divider"></div>
+                                <a class="dropdown-item" href="#">Something else here</a>
+                            </div>
+                        </li>
+                        <li class="nav-item dropdown products nav-two">
+                            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                Products
+                            </a>
+                            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                <a class="dropdown-item" href="#">Action</a>
+                                <a class="dropdown-item" href="#">Another action</a>
+                                <div class="dropdown-divider"></div>
+                                <a class="dropdown-item" href="#">Something else here</a>
+                            </div>
+                        </li>
+                        <li class="nav-item gallery nav-two">
+                            <a class="nav-link gallery" href="gallery.html">Gallery</a>
+                        </li>
+                        <li class="nav-item contact nav-two">
+                            <a class="nav-link contact" href="contact.html">Contact</a>
+                        </li>
+                    </ul>
+    
+                    <form class="form-inline my-2 my-lg-0">
+                            <a href="" class="search-icon-container">
+                                <i class="fa fa-search"></i>
+                            </a>
+                    </form>
+                </div>
+            </nav>
+            <!-- End of Footer -->
+        </div>
 
         <!-- beginning of jumbotron-->
         <div class="jumbotron">
-            <h1 class="display-4">Nes Details No Image! </h1>
+            <p class="display-4">Bootstrap Index Page, Welcome! </p>
             <p class="lead">This is a simple hero unit, a simple jumbotron-style component for calling extra attention to featured content or information.</p>
             <hr class="my-4">
             <p>It uses utility classes for typography and spacing to space content out within the larger container.</p>
             <p class="lead">
-                <a class="btn btn-primary btn-lg" href="#" role="button">Learn more</a>
+                <a class="btn btn-primary btn-lg learn-more" href="#" role="button">Learn more</a>
             </p>
         </div>
         <!-- End of jumpbotron -->
 
         <!--Footer-->
-        <footer class="page-footer font-small stylish-color-dark pt-4 mt-4">
+        <footer class="page-footer font-small pt-4 mt-4">
 
                 <!--Footer Links-->
                 <div class="container text-center text-md-left">
@@ -116,9 +188,6 @@
                                 </li>
                             </ul>
                         </div>
-                        <!--/.Third column-->
-            
-                        <hr class="clearfix w-100 d-md-none">
             
                         <!--Fourth column-->
                         <div class="col-md-2 mx-auto">
@@ -145,38 +214,6 @@
 
                 <hr>
             
-                <!--Social buttons-->
-                <div class="text-center">
-                    <ul class="list-unstyled list-inline">
-                        <li class="list-inline-item">
-                            <a class="btn-floating btn-sm btn-fb mx-1">
-                                <i class="fa fa-facebook"> </i>
-                            </a>
-                        </li>
-                        <li class="list-inline-item">
-                            <a class="btn-floating btn-sm btn-tw mx-1">
-                                <i class="fa fa-twitter"> </i>
-                            </a>
-                        </li>
-                        <li class="list-inline-item">
-                            <a class="btn-floating btn-sm btn-gplus mx-1">
-                                <i class="fa fa-google-plus"> </i>
-                            </a>
-                        </li>
-                        <li class="list-inline-item">
-                            <a class="btn-floating btn-sm btn-li mx-1">
-                                <i class="fa fa-linkedin"> </i>
-                            </a>
-                        </li>
-                        <li class="list-inline-item">
-                            <a class="btn-floating btn-sm btn-dribbble mx-1">
-                                <i class="fa fa-dribbble"> </i>
-                            </a>
-                        </li>
-                    </ul>
-                </div>
-                <!--/.Social buttons-->
-            
                 <!--Copyright-->
                 <div class="footer-copyright py-3 text-center">
                     © 2018 Copyright:
@@ -185,7 +222,6 @@
                 <!--/.Copyright-->    
         </footer>
         <!--/.Footer-->
-
     </body>
 
 </html>

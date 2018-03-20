@@ -1,9 +1,106 @@
-.footer {
-  position: fixed;
-  left: 0;
-  bottom: 0;
-  width: 100%;
-  background-color: #343A40;
-  color: white;
-  text-align: center;
+.navbar {
+  background-color: #313131;
 }
+
+.hotel-icon-container {
+  float: left;
+  width: 310px;
+  height: 200px;
+}
+
+.hotel-icon {
+  width: 310px;
+  height: 150px;
+} 
+
+.nav-item.nav-one {
+  font-size: 13px;
+  margin-right: 40px; /* add 40px of space between each link in top nav bar*/
+}
+
+.nav-item.nav-one:hover {
+  border-bottom: 4px solid #ffffff;
+}
+
+.nav-item.nav-two {
+  margin-right: 40px; /* add 40px of space between each link in top nav bar*/
+}
+
+.nav-item.nav-two:hover {
+  border-bottom: 4px solid #ffffff;
+  margin-bottom: 0px;
+  padding-bottom: 0px;
+}
+
+nav.nav-two-container {
+  border-bottom: 1px solid #808080;
+}
+
+div.jumbotron {
+  background-color: #313131;
+  color: white;
+}
+.learn-more {
+  background-color: #808080;
+}
+
+.navbar-brand, .navbar-link {
+  color: #808080;
+}
+
+.navbar a {
+  color: #808080; 
+}
+
+  .navbar a:hover {
+    color: white; 
+  }
+
+  .nav-link.log-in {
+    letter-spacing: 1px;
+  }
+
+  .nav-item.social-media a {
+    margin-left: 3px;
+    margin-right: 3px;
+    font-size: 15px;
+    width: 6px;
+    height: 6px;
+  }
+
+  .nav-item.social-media a i {
+    color: #808080;
+  }
+
+  .search-icon-container {
+    width: 30px;
+    height: 30px;
+  }
+
+  .form-inline {
+    background-color: #313131;
+    color: white;
+    float: right;
+  }
+
+
+
+  /* Footer CSS */
+  .footer {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    background-color: #313131;
+    color: white;
+    text-align: center;
+  }
+
+  .page-footer {
+    background-color: #313131;
+    color: white;
+  }
+
+  .page-footer a {
+    color: #ffffff;
+  }
