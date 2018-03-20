@@ -1,11 +1,9 @@
 # Resume Page Website
-![alt text](images/psd-to-html.png)
-
-One Paragraph of project description goes here
+![alt text](assets/images/resume-image.png)
 
 ## Getting Started
 
-PSDtoHTML was my project to create a PSD or Photoshop document into a single page application(SPA). git check
+My resume Page website is my project to create a website from my professional resume which is in text/.doc format into a single page application(SPA). 
 
 To start making changes to this repo you first have to clone the repo.
 
@@ -37,7 +35,6 @@ Press Enter. Your local clone will be created.
 ```
 git clone https://github.com/USERNAME/YOUR-REPOSITORYNAME
 ```
-
 ## Built With
 
 * [HTML5](https://developer.mozilla.org/en-US/docs/Web/Guide/HTML/HTML5) - is the latest evolution of the standard that defines HTML. The term represents two different concepts. It is a new version of the language HTML, with new elements, attributes, and behaviors, and a larger set of technologies that allows the building of more diverse and powerful Web sites and applications. This set is sometimes called HTML5 & friends and often shortened to just HTML5.
