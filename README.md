@@ -1,5 +1,5 @@
 # Resume Page Website
-![alt text](assets/images/resume-image.png)
+![alt text](assets/images/bootstrap-readme-image.jpg)
 
 ## Getting Started
 
