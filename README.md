@@ -1,11 +1,9 @@
 # Resume Page Website
-![alt text](assets/images/psdtohtml.png)
-
-One Paragraph of project description goes here
+![alt text](assets/images/resume-image.png)
 
 ## Getting Started
 
-PSDtoHTML was my project to create a PSD or Photoshop document into a single page application(SPA). git check
+My resume Page website is my project to create a website from my professional resume which is in text/.doc format into a single page application(SPA). 
 
 To start making changes to this repo you first have to clone the repo.
 
