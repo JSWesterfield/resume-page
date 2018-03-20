@@ -1,5 +1,5 @@
 # Resume Page Website
-![alt text](images/psd-to-html.png)
+![alt text](assets/images/psd-to-html.png)
 
 One Paragraph of project description goes here
 
