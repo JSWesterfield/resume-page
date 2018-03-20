@@ -1,4 +1,4 @@
-# ResumePage Website
+# Resume Page Website
 ![alt text](images/psd-to-html.png)
 
 One Paragraph of project description goes here
@@ -30,12 +30,12 @@ cd path/to/my/directory/where/I/want/to/clone/repo
 Type git clone, and then paste the URL you copied in Step 2.
 
 ```
-git clone https://github.com/YOUR-USERNAME/YOUR-REPOSITORY
+git clone https://github.com/jakewesterfield/resume-page.git
 ```
 
 Press Enter. Your local clone will be created.
 ```
-git clone https://github.com/YOUR-USERNAME/YOUR-REPOSITORY
+git clone https://github.com/USERNAME/YOUR-REPOSITORYNAME
 ```
 
 ## Built With
@@ -46,17 +46,13 @@ git clone https://github.com/YOUR-USERNAME/YOUR-REPOSITORY
 
 ## Contributing
 
-Please read [CONTRIBUTING.md](https://gist.github.com/PurpleBooth/b24679402957c63ec426) for details on our code of conduct, and the process for submitting pull requests to us.
-
-## Versioning
-
-We use [SemVer](http://semver.org/) for versioning. For the versions available, see the [tags on this repository](https://github.com/your/project/tags). 
+Please read [CONTRIBUTING.md](https://gist.github.com/) for details on our code of conduct, and the process for submitting pull requests to us.
 
 ## Authors
 
 * **Jacob Westerfield** - [Porfolio Page](http://jakewesterfield.herokuapp.com/)
 
-See also the list of [contributors](https://github.com/JSWesterfield/PSDtoHTMLProject/graphs/contributors) who participated in this project.
+See also the list of [contributors](https://github.com/jakewesterfield/resume-page/settings/collaboration) who participated in this project.
 
 ## License
 
