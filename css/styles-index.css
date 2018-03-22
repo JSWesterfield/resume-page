@@ -1,88 +1,72 @@
-* {
-    background-color: #313131; 
- }
- 
- .hotel-brand {
-   background-color: #ffffff;
- }
 
- .navbar-nav {
-   float: left;
- }
-                     /* navbar #1 */
- .nav-item.nav-one {
-   font-size: 15px;
-   margin-right: 15px; /* add 40px of space between each link in top nav bar*/
- }
- 
- .nav-item.nav-one:hover {
-   border-bottom: 4px solid #ffffff;
- }
- 
-                   /* navbar #2 */
- .nav-item.nav-two {
-   font-size: 15px;
-   margin-right: 15px; /* add 40px of space between each link in top nav bar*/
- }
- 
- .nav-item.nav-two:hover {
-   border-bottom: 4px solid #ffffff; /*add a white indicator for the bottom of the navbar link */
- }
- 
- .navbar-link {
-   color: #808080;
- }
- 
- .navbar a {
-   color: #808080; 
- }
- 
- .navbar a:hover {
-   color: white; 
- }
- 
- .nav-link.log-in {
-   letter-spacing: 1px;
- }
- 
- .nav-item.social-media a {
-   margin-left: 1px;
-   margin-right: 1px;
-   width: 4px;
-   height: 4px;
- }
- 
- .nav-item.social-media a i {
-   color: #808080;
- }
- 
- .search-icon-container {
-   width: 27px;
-   height: 27px;
- }
- 
- .form-inline {
-   background-color: #313131;
-   color: white;
-   float: right;
- }
- 
- /* Jumbotron Content*/
- .percentage-text {
-   color: #ffffff;
-   font-size: 40px;
- }
- 
- div.jumbotron {
-   background-color: #313131;
-   color: white;
- }
- 
- .jumbotron-title {
-   text-transform: uppercase;
-   font-weight: bolder;
- }
- 
+.hotel-brand {
+  background-color: #ffffff;
+}
+
+.my-auto {
+  background-color: #ffffff;
+}
+                    /* navbar #1 */
+.nav-item.nav-one {
+  font-size: 15px;
+  margin-right: 15px; /* add 40px of space between each link in top nav bar*/
+}
+
+/* dark grey background of right side navbar */ 
+nav.navbar.navbar-expand-md {
+  padding: 0px;
+  margin-bottom: 0px;
+  background-color: #313131;
+}
+                  /* navbar #2 */
+.nav-item.nav-two {
+  font-size: 15px;
+  margin-right: 15px; /* add 40px of space between each link in top nav bar*/
+}
+
+.navbar a {
+  color: #808080; 
+}
+
+.bottom-navlink {
+  font-size: 20px;
+}
+
+.top-navlink {
+  font-size: 20px;
+}
+
+.navbar a:hover {
+  color: #ffffff; 
+  border-bottom: 3px solid #ffffff;
+}
+
+.link {
+  margin-left: 40px;
+  margin-right: 27px;
+
+}
+
+.nav-link.log-in {
+  letter-spacing: 1px;
+}
+
+/* Jumbotron Content*/
+.percentage-text {
+  color: #ffffff;
+  font-size: 40px;
+}
+
+div.jumbotron {
+  background-color: #313131;
+  color: white;
+}
+
+.jumbotron-title {
+  text-transform: uppercase;
+  font-weight: bolder;
+}
+
 .btn-group button {
   background-color: #ffffff; 
   text-transform: uppercase;
@@ -93,30 +77,31 @@
   border: none;
 }
 
- .explore {  /* explore it button*/
-   text-transform: uppercase;
-   color: #808080;
-   font-size: 10px;
-   background-color: #ffffff;
-   border-radius: 100%;
- }
- 
- /* Footer CSS */
- .footer {
-   position: fixed;
-   left: 0;
-   bottom: 0;
-   width: 100%;
-   background-color: #313131;
-   color: white;
-   text-align: center;
- }
- 
- .page-footer {
-   background-color: #313131;
-   color: white;
- }
- 
- .page-footer a {
-   color: #ffffff;
- }
+.btn-group button:hover {
+  background: linear-gradient(to bottom right, red, yellow);
+  text-transform: uppercase;
+  color: #000000; /* White text */
+  padding: 10px 24px; /* Some padding */
+  float: left; /* Float the buttons side by side */
+  border: none;
+}
+
+/* Footer CSS */
+.footer {
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  background-color: #313131;
+  color: white;
+  text-align: center;
+}
+
+.page-footer {
+  background-color: #313131;
+  color: white;
+}
+
+.page-footer a {
+  color: #ffffff;
+}

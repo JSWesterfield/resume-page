@@ -13,49 +13,73 @@
 
     <body >
         <nav class="navbar navbar-expand-md">
-            <h3 class="my-auto"><a class="navbar-brand" href="#">Brand</a></h3>
+            <div class="my-auto">
+                <div class="navbar-brand" href="#">
+                    <!-- Our cool hotel image --> 
+                    <img src="assets/images/logo.png" alt="">
+                </div>
+            </div>
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse">
                 <span class="navbar-toggler-icon"></span>
             </button>
             <div class="collapse navbar-collapse w-100 flex-md-column" id="navbarCollapse">
                 <ul class="navbar-nav ml-auto small mb-2 mb-md-0">
                     <li class="nav-item active">
-                        <a class="nav-link email" href="#"><i class="fa fa-envelope"></i>Info@hellphelp.com <span class="sr-only"></span></a>
+                        <a class="nav-link link email" href="#"><i class="fa fa-envelope"></i>Info@hellphelp.com <span class="sr-only"></span></a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link py-1 phone-number" href="#"><i class="fa fa-phone"></i>+440 8753699208</a>
+                        <a class="nav-link py-1 link phone-number" href="#"><i class="fa fa-phone"></i>+440 8753699208</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link py-1 log-in" href="#">Log In <i class="fa fa-angle-right"></i></a>
+                        <a class="nav-link py-1 link log-in" href="#">Log In <i class="fa fa-angle-right"></i></a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link py-1" href="#">EN <i class="fa fa-angle-down"></i></a>
+                        <a class="nav-link py-1 dropdown-toggle link" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            EN 
+                            <i class="fa fa-angle-down"></i>
+                        </a>
                     </li>
+                    <li class="nav-item">
+                        <a class="nav-link py-1 social facebook" href="#"><i class="fa fa-facebook"></i></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link py-1 social twitter" href="#"><i class="fa fa-twitter"></i></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link py-1 social instagram" href="#"><i class="fa fa-instagram"></i></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link py-1 social mail" href="#"><i class="fa fa-envelope"></i></a>
+                    </li>
+
                 </ul>
                 <form class="form-inline ml-auto">
                     <ul class="navbar-nav ml-auto small mb-2 mb-md-0">
-                            <li class="nav-item">
-                                    <a class="nav-link py-1 home" href="#">Home</a>
+                            <li class="nav-item bottom-navlink">
+                                    <a class="nav-link py-1 link home bottom-navlink" href="#">Home</a>
                                 </li>
-                            <li class="nav-item">
-                                <a class="nav-link py-1 about-us" href="#">About Us</a>
+                            <li class="nav-item bottom-navlink">
+                                <a class="nav-link py-1 link about-us bottom-navlink" href="#">About Us</a>
                             </li>  
-                            <li class="nav-item">
-                                <a class="nav-link py-1 dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            <li class="nav-tem bottom-navlink">
+                                <a class="nav-link py-1 dropdown-toggle link bottom-navlink" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                                     Services
                                 </a>
                             </li>
-                            <li class="nav-item">
-                                <a class="nav-link py-1 dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            <li class="nav-item bottom-navlink">
+                                <a class="nav-link py-1 dropdown-toggle link bottom-navlink" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                                     Products
                                 </a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link py-1 gallery" href="#">Gallery</a>
+                                <a class="nav-link py-1 link gallery bottom-navlink" href="#">Gallery</a>
                             </li>  
+                            <li class="nav-item bottom-navlink contact">
+                                <a class="nav-link py-1 link contact bottom-navlink" href="#">Contact</a>
+                            </li>
                             <li class="nav-item">
-                                <a class="nav-link py-1 gallery" href="#">Contact</a>
-                            </li> 
+                                <a class="nav-link py-1 link search bottom-navlink" href="#"><i class="fa fa-search"></i></a>
+                            </li>
                         </ul>
                     <div class="input-group">
                     </div>
@@ -63,17 +87,66 @@
             </div>
         </nav> <!-- end of navigation --> 
         
-                
-        <!-- beginning of jumbotron-->
-        <div class="jumbotron">
-                <p class="display-4">Bootstrap Index Page, Welcome! </p>
-                <p class="lead">This is a simple hero unit, a simple jumbotron-style component for calling extra attention to featured content or information.</p>
-                <div class="btn-group">
-                    <button>Learn More</button>
+        <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+            <ol class="carousel-indicators">
+                <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+                <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+                <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+            </ol>
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <!-- beginning of jumbotron-->
+                    <div class="jumbotron d-block w-100">
+                        <p class="display-4"> 
+                            <span class="percentage-text">
+                                35%
+                            </span>
+                            <br>  
+                            <span class="display-4 jumbotron-title">
+                                You Enter Summer with 
+                                <br>
+                                refreshing rates
+                            </span>
+                        </p>
+                        <div class="btn-group">
+                            <button class="explore">Explore It</button>
+                        </div>
+                    </div>
+                    <!-- End of jumpbotron -->        
                 </div>
-            </div>
-            <!-- End of jumpbotron -->        
-
+                <div class="carousel-item">
+                    <!-- beginning of jumbotron-->
+                    <div class="jumbotron d-block w-100">
+                        <p class="display-4">Bootstrap Index Page, Welcome! </p>
+                        <p class="lead">This is a simple hero unit, a simple jumbotron-style component for calling extra attention to featured content or information.</p>
+                        <div class="btn-group">
+                            <button>Explore Now</button>
+                        </div>
+                    </div>
+                    <!-- End of 2nd jumpbotron -->
+                </div>
+                <div class="carousel-item">
+                    <!-- beginning of 3rd jumbotron slide -->
+                    <div class="jumbotron d-block w-100">
+                        <p class="display-4">Bootstrap Index Page, Welcome! </p>
+                        <p class="lead">This is a simple hero unit, a simple jumbotron-style component for calling extra attention to featured content or information.</p>
+                        <div class="btn-group">
+                            <button>Learn More</button>
+                        </div>
+                    </div>
+                    <!-- End of  3rd jumpbotron slide -->
+                </div>
+                <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="sr-only">Previous</span>
+                </a>
+                <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="sr-only">Next</span>
+                </a>
+            </div> <!-- end of carousel inner div-->
+        </div>
+            
         <!--Footer-->
         <footer class="page-footer font-small pt-4 mt-4">
 
