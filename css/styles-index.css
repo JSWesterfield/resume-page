@@ -5,11 +5,7 @@
  .hotel-brand {
    background-color: #ffffff;
  }
- 
- nav {
-   border-bottom: 1px solid #808080;
- }
- 
+
  .navbar-nav {
    float: left;
  }
@@ -87,6 +83,16 @@
    font-weight: bolder;
  }
  
+.btn-group button {
+  background-color: #ffffff; 
+  text-transform: uppercase;
+  color: #808080; /* White text */
+  padding: 10px 24px; /* Some padding */
+  cursor: pointer; /* Pointer/hand icon */
+  float: left; /* Float the buttons side by side */
+  border: none;
+}
+
  .explore {  /* explore it button*/
    text-transform: uppercase;
    color: #808080;
