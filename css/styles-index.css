@@ -43,15 +43,21 @@ nav.navbar.navbar-expand-md {
 }
 
 .bottom-navlink {
-  font-size: 19x;
+  font-size: 19x; 
 }
-
-.social {
-  font-size: 20px;
-}
-
-.nav-link.log-in {
+.login-container {
+  border: 1px solid #808080;
   letter-spacing: 1px;
+  margin-left: 2px;
+}
+
+.language-container {
+  border: 1px solid #808080;
+}
+
+.social-container {
+  font-size: 20px;
+  /* border: 1px solid #808080; */
 }
 
 /* Jumbotron Content*/
@@ -60,18 +66,24 @@ nav.navbar.navbar-expand-md {
   font-size: 40px;
 }
 
-
 div.jumbotron {
   background-color: #313131;
   color: white;
 }
 
 /* colors the area below the carousel, contains the indicators */
-div.carousel {
+div.carousel-card {
   background-color: #313131;
+  z-index: 1;
+}
+
+body.container-fluid {
   padding: 0px;
   margin: 0px;
-  z-index: 1;
+}
+
+div.container-fluid.carousel-card.row {
+  margin: 0px;
 }
 
 .jumbotron-title {
@@ -98,36 +110,29 @@ div.carousel {
   z-index: 2;
 }
 
-
-/* Hotel Selection section */
-.weather-card {
-  float: right;
-}
-
-.sun-card {
-  color: orange;
-  background-color: blue;
-}
-
 .card {
-  width: 15rem; 
-  height: 20rem;
-  background-color: red!important;
+  background-color: #313131!important;
+  float: right;
+  border: none!important;
+}
+
+.card-background {
   padding: 0px;
+  margin: 0px;  
+  border: 1px solid red;
+  z-index: 0;
   position: relative;
-  z-index: 3;
+}
+
+.card-icon {
+  z-index: 1;
+  position: absolute;
+  color: red;
 }
 
 .background_weather {
   background-image: url("sun_icon");
-  background: black;
-}
-
-.sun_icon {
-  opacity: 0.2;
-  color: blue;
-  border: 2px solid rgb(8, 80, 128);
-
+  background: #000000;
 }
 
 /* Footer CSS */
@@ -137,13 +142,13 @@ div.carousel {
   bottom: 0;
   width: 100%;
   background-color: #313131;
-  color: white;
+  color: #ffffff;
   text-align: center;
 }
 
 .page-footer {
   background-color: #313131;
-  color: white;
+  color: #ffffff;
 }
 
 .page-footer a {
