@@ -13,23 +13,27 @@
 
     <body class="container-fluid">
         <nav class="navbar navbar-expand-md navbar-dark">
-            <div class="my-auto">
-                <div class="navbar-brand" href="#">
+            <div class="my-auto col-md-3">
+                <div class="navbar-brand d-flex justify-content-end align-items-stretch" href="#">
                     <!-- Our cool hotel image --> 
-                    <img src="assets/images/logo.png" alt="">
+                    <img class="" src="assets/images/logo.png" alt="">
                 </div>
             </div>
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse">
                 <span class="navbar-toggler-icon"></span>
             </button>
-            <div class="collapse navbar-collapse w-100 flex-md-column" id="navbarCollapse">
+            <div class="collapse navbar-collapse flex-md-column col-md-9" id="navbarCollapse">
                 <ul class="navbar-nav ml-auto small mb-2 mb-md-0 d-flex justify-content-start align-items-start">
                     <li class="nav-item active">
-                        <a class="nav-link link email top-navlink" href="#"><i class="fa fa-envelope"></i>Info@hellphelp.com <span class="sr-only"></span></a>
+                        <a class="nav-link link email top-navlink" href="#">
+                            <i class="fa fa-envelope">                                
+                            </i>Info@hellphelp.com 
+                        </a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link py-1 link phone-number top-navlink" href="#">
-                            <i class="fa fa-phone"></i> +440 8753699208
+                            <i class="fa fa-phone">
+                            </i> +440 8753699208
                         </a>
                     </li>
                     <li class="nav-item login-container">
@@ -108,7 +112,7 @@
                         <div class="jumbotron d-block w-100">
                             <p class="display-4"> 
                                 <span class="percentage-text">
-                                    35%
+                                    35% Sale
                                 </span>
                                 <br>  
                                 <span class="display-4 jumbotron-title">
@@ -124,26 +128,44 @@
                         <!-- End of jumbotron -->        
                     </div>
                     <div class="carousel-item">
-                        <!-- beginning of jumbotron-->
+                        <!-- beginning of 2nd jumbotron-->
                         <div class="jumbotron d-block w-100">
-                            <p class="display-4">Bootstrap Index Page, Welcome! </p>
-                            <p class="lead">This is a simple hero unit, a simple jumbotron-style component for calling extra attention to featured content or information.</p>
-                            <div class="btn-group">
-                                <button>Explore Now</button>
+                                <p class="display-4"> 
+                                    <span class="percentage-text">
+                                        35% Sale
+                                    </span>
+                                    <br>  
+                                    <span class="display-4 jumbotron-title">
+                                        You Enter Summer with 
+                                        <br>
+                                        refreshing rates
+                                    </span>
+                                </p>
+                                <div class="btn-group">
+                                    <button class="explore">Explore It</button>
+                                </div>
                             </div>
-                        </div>
-                        <!-- End of 2nd jumpbotron -->
+                            <!-- End of 2nd jumbotron --> 
                     </div>
                     <div class="carousel-item">
-                        <!-- beginning of 3rd jumbotron slide -->
+                        <!-- beginning of 3rd jumbotron-->
                         <div class="jumbotron d-block w-100">
-                            <p class="display-4">Bootstrap Index Page, Welcome! </p>
-                            <p class="lead">This is a simple hero unit, a simple jumbotron-style component for calling extra attention to featured content or information.</p>
-                            <div class="btn-group">
-                                <button>Learn More</button>
+                                <p class="display-4"> 
+                                    <span class="percentage-text">
+                                        35% Sale
+                                    </span>
+                                    <br>  
+                                    <span class="display-4 jumbotron-title">
+                                        You Enter Summer with 
+                                        <br>
+                                        refreshing rates
+                                    </span>
+                                </p>
+                                <div class="btn-group">
+                                    <button class="explore">Explore It</button>
+                                </div>
                             </div>
-                        </div>
-                        <!-- End of  3rd jumpbotron slide -->
+                            <!-- End of 3rd jumbotron --> 
                     </div>
                     <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
                         <span class="carousel-control-prev-icon" aria-hidden="true"></span>
@@ -159,33 +181,66 @@
             <!-- FLOATING RIGHT WEATHER CARDS -->
             <div class="card weather-card col-md-2 d-flex justify-content-center align-items-center">
                 <ul class="list-group list-group-flush d-inline-flex p-2">
-                    <li class="list-group-item d-inline-flex p-2 ">
-                        <p class="weather-card-city d-flex justify-content-center align-items-center">Greece</p>     
-                        <img class="card-background greece-weather justify-content-stret align-items-stretch" src="assets/images/Rectangle_gradient.svg" alt="">
-                        <img class="card-icon" src="assets/images/sunny.svg" alt="">
+                    <li class="list-group-item d-inline-flex p-2 ">                       
+                        <img class="card-background greece-weather d-flex justify-content-stret align-items-stretch" src="assets/images/weather.svg" alt="weather_icon">                  
+                    </li>
+                    
+                    <li class="list-group-item d-inline-flex p-2">                      
+                        <img class="card-background greece-weather d-flex justify-content-stret align-items-stretch" src="assets/images/Gellery.svg" alt="gallery_icon">
                     </li>
                     
                     <li class="list-group-item d-inline-flex p-2">
-                        <p class="weather-card-gallery d-flex justify-content-center align-items-center">Gallery</p>  
-                        <img class="card-background " src="assets/images/Rectangle gradient_gray.svg" alt="">
-                        <img class="card-icon" src="assets/images/layered_gallery.svg" alt="">
-                    </li>
-                    
-                    <li class="list-group-item d-inline-flex p-2 align-items-start">
-                        <p class="weather-card-city d-flex justify-content-center align-items-center">360 Virtual Tour</p>  
-                        <img class="card-background d-flex align-items-center justify-content-center" src="assets/images/Rectangle_gradient_white.svg" alt="">
-                        <img class="card-icon d-flex align-items-center justify-content-center" src="assets/images/virtual_tour.svg" alt="">
+                        <img class="card-background greece-weather d-flex justify-content-stretch align-items-stretch" src="assets/images/360-Virtual-Tour.svg" alt="virtual_tour_icon">
                     </li>
                 </ul>
+
             </div><!-- floating card end div COL-MD-2 -->
-        </div> <!-- end of container-fluid carousel-card ROW -->
-        
-        <!-- HOTEL SELECTION SECTION -->
-        <!-- <section class="hotel-selection-section">
-            <div>
+
+            <!-- HOTEL SELECTION SECTION -->
+            <div class="container hotel">
+                <h3 class="nav nav-tabs hotel"><img src="assets/images/hotel-icon.svg" class="hotel-icon hotel"> Hotel</h3>
+                <ul class="list-inline row hotel">
+                    <li class="col-md-2 hotel-link"><a href="#">Arrival</a></li>
+                    <li class="col-md-2 hotel-link"><a href="#">Going</a></li>
+                    <li class="col-md-2 hotel-link"><a href="#">Person</a></li>
+                    <li class="col-md-2 hotel-link"><a href="#">Child</a></li>
+                    <li class="col-md-2 hotel-link"><a href="#">Day</a></li>
+                </ul>
                 
-            </div>
-        </section> -->
+                <ul class="nav nav-tabs row">
+                    <li class="active col-md-2">
+                        <div class="input-group date" data-provide="datepicker">
+                            <input type="text" class="form-control" data-date-format="mm/dd/yyyy" placeholder="Arrival">
+                            <div class="input-group-addon calender-icon"> 
+                                <i class="fa fa-calendar"></i>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="col-md-2">
+                        <div class="input-group date" data-provide="datepicker">
+                            <input type="text" class="form-control" data-date-format="mm/dd/yyyy" placeholder="Going">
+                            <div class="input-group-addon calender-icon">
+                                <i class="fa fa-calendar"></i>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="col-md-2">
+                        <input data-provide="datepicker" placeholder="Person">
+                    </li>
+                    <li class="col-md-2">
+                        <input data-provide="datepicker" placeholder="Child">
+                    </li>
+                    <li class="col-md-2">
+                        <input data-provide="datepicker" placeholder="Day">
+                    </li>
+
+                    <button type="button" class="btn btn-secondary search-book d-flex justify-content-end align-">Search Book</button>
+                </ul>
+        </div>
+            
+        </div> <!-- end of container-fluid carousel-card ROW -->
+
+        
 
         <!--FOOTER SECTION -->
         <footer class="page-footer font-small pt-4 mt-4">
@@ -285,3 +340,6 @@
 <script src="https://code.jquery.com/jquery-3.3.1.slim.js" integrity="sha256-fNXJFIlca05BIO2Y5zh1xrShK3ME+/lYZ0j+ChxX2DA=" crossorigin="anonymous"></script>
   <!-- for needed bootstrap script for functionality -->
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+
+<!-- Our JS for out datepicker-->
+<script src="js/index.js"></script>

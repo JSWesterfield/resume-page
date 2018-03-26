@@ -1,27 +1,30 @@
-
-.hotel-brand {
-  background-color: #ffffff;
-}
-
 .my-auto {
   background-color: #ffffff;
+  padding-left: 0px;
+  padding-right: 0px;
 }
-                    /* navbar #1 */
+   
+div.my-auto.col-md-3 {
+  margin: 0px;
+  border: 1px solid red;
+}
+
+/* navbar #1 */
 .nav-item.nav-one {
   font-size: 15px;
-  margin-right: 15px; /* add 40px of space between each link in top nav bar*/
+  margin-right: 5px; /* add 40px of space between each link in top nav bar*/
 }
 
 /* dark grey background of right side navbar */ 
 nav.navbar.navbar-expand-md {
   padding: 0px;
   margin-bottom: 0px;
-  background-color: #313131;
+  background-color: #363636;
 }
 
                   /* navbar #2 */
 .nav-item.nav-two {
-  margin-right: 15px; /* add 40px of space between each link in top nav bar*/
+  margin-right: 5px; /* add 40px of space between each link in top nav bar*/
 }
 
 .navbar a {
@@ -129,7 +132,6 @@ div.container-fluid.carousel-card.row {
 }
 
 .list-group-item  p {
-  color: navy;
   font-weight: 800;
   z-index: 2;
   position: absolute;
@@ -140,7 +142,31 @@ div.container-fluid.carousel-card.row {
   background: #000000;
 }
 
-/* Footer CSS */
+div.container.hotel {
+  margin: 0px;
+}
+
+.hotel {
+  background-color: #ffffff;
+}
+
+.hotel-link {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.hotel-link a, .hotel-icon {
+  color: #5F5F5F;
+}
+
+.calender-icon {
+  color: #5F5F5F;
+  margin-top: 7px;
+  margin-left: 0.4em;
+}
+
+/*Footer CSS */
 .footer {
   position: fixed;
   left: 0;
