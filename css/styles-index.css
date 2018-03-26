@@ -54,6 +54,12 @@ nav.navbar.navbar-expand-sm {
   font-size: 40px;
 }
 
+/* jumbotron icons */
+.carousel-inner > img:nth-child(2n) {
+  color: lime;
+  border-color: 2px solid lime;
+}
+
 div.jumbotron {
   background-color: #313131;
   color: white;
@@ -160,13 +166,10 @@ div.container.hotel {
   background-color: #ffffff;
 }
 
-.hotel-link {
+.hotel-link, .hotel-icon-title-container div h5 {
   display: flex;
   align-items: center;
   justify-content: center;
-}
-
-.hotel-icon-title-container div h5 {
   color: #5F5F5F;
 }
 
@@ -190,16 +193,29 @@ div.container.hotel {
   margin-left: 0.4em;
 }
 
+.gold-text {
+  color: #DBCDB2;
+}
+
+.center-feature {
+  display: flex;
+  justify-content: end;
+  align-items: end;
+  border: 1px solid #DBCDB2; 
+}
+
+/* Grab all row img icons and break after then, as well as center them. */
+.jumbotron-icon {
+  width: 100px;
+  height: 100px;
+
+}
+
 .white-background {
   height: 1500px;
   width: 100%;
   background-color: #ffffff;
   margin-top: 20px;
-  border-top: 3px solid #DBCDB2;
-}
-
-.gold-text {
-  color: #DBCDB2; /*gold text image from the Discover svg*/
 }
 
 /*Footer CSS */
