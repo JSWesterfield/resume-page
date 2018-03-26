@@ -99,8 +99,7 @@
        <div class="container-fluid carousel-card row">
 
             <!-- CAROUSEL SECTION -->
-            <div id="carouselExampleIndicators" class="carousel slide col-md-10" data-ride="carousel">
-        
+            <div id="carouselExampleIndicators d-flex justify-content-start" class="carousel slide col-md-10" data-ride="carousel">
                 <ol class="carousel-indicators">
                     <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
                     <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
@@ -130,43 +129,83 @@
                     <div class="carousel-item">
                         <!-- beginning of 2nd jumbotron-->
                         <div class="jumbotron d-block w-100">
-                                <p class="display-4"> 
-                                    <span class="percentage-text">
-                                        35% Sale
-                                    </span>
-                                    <br>  
-                                    <span class="display-4 jumbotron-title">
-                                        You Enter Summer with 
-                                        <br>
-                                        refreshing rates
-                                    </span>
-                                </p>
-                                <div class="btn-group">
-                                    <button class="explore">Explore It</button>
-                                </div>
+                            <p class="display-4"> 
+                                <span class="percentage-text">
+                                    25% Off
+                                </span>
+                                <br>  
+                                <span class="display-4 jumbotron-title">
+                                    Airfare with Purchase 
+                                    <br>
+                                    of a 7 day hotel stay
+                                </span>
+                            </p>
+                            <div class="btn-group">
+                                <button class="explore">Check Flights</button>
                             </div>
-                            <!-- End of 2nd jumbotron --> 
-                    </div>
+                        </div>    
+                    </div><!-- End of 2nd jumbotron --> 
+
                     <div class="carousel-item">
                         <!-- beginning of 3rd jumbotron-->
                         <div class="jumbotron d-block w-100">
-                                <p class="display-4"> 
-                                    <span class="percentage-text">
-                                        35% Sale
-                                    </span>
-                                    <br>  
-                                    <span class="display-4 jumbotron-title">
-                                        You Enter Summer with 
-                                        <br>
-                                        refreshing rates
-                                    </span>
-                                </p>
-                                <div class="btn-group">
-                                    <button class="explore">Explore It</button>
-                                </div>
+                            <p class="display-4"> 
+                                <span class="percentage-text">
+                                    10% Sale 
+                                </span>
+                                <br>  
+                                <span class="display-4 jumbotron-title">
+                                    All 
+                                    <br>
+                                    refreshing rates
+                                </span>
+                            </p>
+                            <div class="btn-group">
+                                <button class="explore">Explore It</button>
                             </div>
-                            <!-- End of 3rd jumbotron --> 
-                    </div>
+                        </div>
+                    </div><!-- End of 3rd jumbotron --> 
+
+                    <div class="carousel-item">
+                        <!-- beginning of 4th jumbotron-->
+                        <div class="jumbotron d-block w-100">
+                            <p class="display-4"> 
+                                <span class="percentage-text">
+                                    35% Sale
+                                </span>
+                                <br>  
+                                <span class="display-4 jumbotron-title">
+                                    You Enter Summer with 
+                                    <br>
+                                    refreshing rates
+                                </span>
+                            </p>
+                            <div class="btn-group">
+                                <button class="explore">Explore It</button>
+                            </div>
+                        </div> 
+                    </div>  <!-- End of 4th jumbotron --> 
+
+                    <div class="carousel-item">
+                        <!-- beginning of 5th jumbotron-->
+                        <div class="jumbotron d-block w-100">
+                            <p class="display-4"> 
+                                <span class="percentage-text">
+                                    35% Sale
+                                </span>
+                                <br>  
+                                <span class="display-4 jumbotron-title">
+                                    Summer Deals to  
+                                    <br>
+                                    Enjoy
+                                </span>
+                            </p>
+                            <div class="btn-group">
+                                <button class="explore">Explore It</button>
+                            </div>
+                        </div> 
+                    </div> <!-- End of 5th jumbotron --> 
+
                     <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
                         <span class="carousel-control-prev-icon" aria-hidden="true"></span>
                         <span class="sr-only">Previous</span>
@@ -197,9 +236,21 @@
             </div><!-- floating card end div COL-MD-2 -->
 
             <!-- HOTEL SELECTION SECTION -->
-            <div class="container hotel">
-                <h3 class="nav nav-tabs hotel"><img src="assets/images/hotel-icon.svg" class="hotel-icon hotel"> Hotel</h3>
-                <ul class="list-inline row hotel">
+            <div class="container-fluid hotel">
+                <div class="hotel-icon-title-container row d-flex justify-content-around align-items-center">
+                    <div class="hotel-icon d-inline">
+                        <img src="assets/images/hotel-icon.svg" class="hotel-svg">
+                    </div>
+                    <div class="d-inline">
+                        <h5 class="nav nav-tabs hotel"> Hotel</h5>
+                    </div>
+                    <div class="blank-black col-md-10 d-flex
+                    ">
+                        <!-- Empty Space -->
+                    </div>
+                </div>
+
+                <ul class="list-inline row hotel ">
                     <li class="col-md-2 hotel-link"><a href="#">Arrival</a></li>
                     <li class="col-md-2 hotel-link"><a href="#">Going</a></li>
                     <li class="col-md-2 hotel-link"><a href="#">Person</a></li>
@@ -207,9 +258,9 @@
                     <li class="col-md-2 hotel-link"><a href="#">Day</a></li>
                 </ul>
                 
-                <ul class="nav nav-tabs row">
+                <ul class="nav row">
                     <li class="active col-md-2">
-                        <div class="input-group date" data-provide="datepicker">
+                        <div class="form-control input-group date" data-provide="datepicker">
                             <input type="text" class="form-control" data-date-format="mm/dd/yyyy" placeholder="Arrival">
                             <div class="input-group-addon calender-icon"> 
                                 <i class="fa fa-calendar"></i>
@@ -217,7 +268,7 @@
                         </div>
                     </li>
                     <li class="col-md-2">
-                        <div class="input-group date" data-provide="datepicker">
+                        <div class="form-control input-group date" data-provide="datepicker">
                             <input type="text" class="form-control" data-date-format="mm/dd/yyyy" placeholder="Going">
                             <div class="input-group-addon calender-icon">
                                 <i class="fa fa-calendar"></i>
@@ -225,28 +276,91 @@
                         </div>
                     </li>
                     <li class="col-md-2">
-                        <input data-provide="datepicker" placeholder="Person">
+                        <select class="form-control select-menu">
+                            <option disabled selected value> -- select a Person -- </option>
+                            <option value="1">1</option>
+                            <option value="2" selected="selected">2</option>
+                            <option value="3">3</option>
+                            <option value="4">4</option>
+                        </select>
                     </li>
                     <li class="col-md-2">
-                        <input data-provide="datepicker" placeholder="Child">
+                        <select class="form-control select-menu">
+                            <option disabled selected value> -- select a Child -- </option>
+                            <option value="blank" selected="selected"></option></option>
+                            <option value="1">1</option>
+                            <option value="2">2</option>
+                            <option value="3">3</option>
+                            <option value="4">4</option>
+                            <option value="5">5</option>
+                            <option value="6">6</option>
+                            <option value="7">7</option>
+                        </select>
                     </li>
                     <li class="col-md-2">
-                        <input data-provide="datepicker" placeholder="Day">
+                        <select class="form-control select-menu">
+                            <option disabled selected value> -- select a Day -- </option>
+                            <option value="blank" selected="selected"></option></option>
+                            <option value="1">1</option>
+                            <option value="2">2</option>
+                            <option value="3">3</option>
+                            <option value="4">4</option>
+                            <option value="5">5</option>
+                            <option value="6">6</option>
+                            <option value="7">7</option>
+                        </select>
                     </li>
 
-                    <button type="button" class="btn btn-secondary search-book d-flex justify-content-end align-">Search Book</button>
+                    <button type="button" class="btn btn-secondary search-book d-flex justify-content-end align-items-end">Search Book</button>
                 </ul>
-        </div>
             
         </div> <!-- end of container-fluid carousel-card ROW -->
 
-        
+        <br>
+        <br>
+
+        <hr>
+
+        <div class="white-background container-fluid w-100 col-md-12 d-flex p-2">
+            <!-- -->
+            <div class="background-about-hotel mt-5 row align-items-start justify-content-center">
+                <div class="col-md-3 justify-content-center">
+                    <img src="assets/images/icon.svg" alt="">
+                    <img src="assets/images/Amazing Travel.svg" alt="">
+                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Excepturi voluptas saepe, ut nemo illum distinctio nihil iusto maxime dicta quos at, facilis rem tenetur modi sapiente harum assumenda delectus accusamus.</p>
+                    <p>Read More <i class="fa fa-caret-right"></i></p>
+                </div>
+
+                <div class="col-md-3 justify-content-center">
+                    <img src="assets/images/map-icon.svg" alt="">
+                    <img src="assets/images/Discover-text.svg" alt="">
+                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ipsa quaerat dolorum recusandae amet, magni quisquam nesciunt culpa veritatis eveniet molestias ad excepturi alias libero sunt harum, rem vel aliquam similique.</p>
+                    <p class="gold-text">Read More <i class="fa fa-caret-right"></i></p>
+                </div>
+
+                <div class="col-md-3 justify-content-center">
+                    <img src="assets/images/globe-İcon.svg" alt="">
+                    <img src="assets/images/Book Your Trip.svg" alt="">
+                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ea repellat reprehenderit sapiente enim eum earum nisi vitae dolor dignissimos maxime eligendi aut quia ipsum qui illo debitis iste, aperiam voluptatibus.</p>
+                    <p>Read More <i class="fa fa-caret-right"></i></p>
+                </div>
+
+                <div class="col-md-3 justify-content-center">
+                    <img src="assets/images/support-icon.svg" alt="">
+                    <img src="assets/images/Nice-Support.svg" alt="">
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Non enim, quo eius velit a dolorem aliquid qui quis esse totam voluptatum necessitatibus reprehenderit expedita accusamus illo molestias quas. Nisi, minus!</p>
+                    <p>Read More <i class="fa fa-caret-right"></i></p>
+                </div>
+            </div>
+        </div>
+
+        <hr>
 
         <!--FOOTER SECTION -->
         <footer class="page-footer font-small pt-4 mt-4">
 
                 <!--Footer Links-->
-                <div class="container text-center text-md-left">
+                <div class="container-fluid text-center text-md-left">
                     <div class="row">
 
                         <!--First column-->
@@ -301,22 +415,8 @@
                         </div>
 
                         <!--Fourth column-->
-                        <div class="col-md-2 mx-auto">
-                            <h5 class="text-uppercase mb-4 mt-3 font-weight-bold">Links</h5>
-                            <ul class="list-unstyled">
-                                <li>
-                                    <a href="#!">Link 1</a>
-                                </li>
-                                <li>
-                                    <a href="#!">Link 2</a>
-                                </li>
-                                <li>
-                                    <a href="#!">Link 3</a>
-                                </li>
-                                <li>
-                                    <a href="#!">Link 4</a>
-                                </li>
-                            </ul>
+                        <div class="col-md-2 mx-auto d-flex align-items-center justify-content-center">
+                            <img class="" src="assets/images/logo.png"><img  alt="">
                         </div>
                         <!--/.Fourth column-->
                     </div>
@@ -328,7 +428,7 @@
                 <!--Copyright-->
                 <div class="footer-copyright py-3 text-center">
                     © 2018 Copyright:
-                    <a href="https://github.com/jakewesterfield/resume-page/"> JakesPage.com </a>
+                    <a href="https://github.com/jakewesterfield/resume-page/"> Nortsea Hotel, Inc.</a>
                 </div>
                 <!--/.Copyright-->
         </footer>

@@ -65,6 +65,31 @@ div.carousel-card {
   z-index: 1;
 }
 
+.carousel-indicators {
+  position: absolute;
+  bottom: 10px;
+  left: 0;
+  z-index: 15;
+  width: 10%;
+  padding-left: 0;
+  margin-left: 0px;
+  text-align: center;
+  list-style: none;
+}
+
+.carousel-indicators li {
+  display: inline-block;
+  width: 15px;
+  height: 15px;
+  margin: 1px;
+  text-indent: -999px;
+  cursor: pointer;
+  background-color: #000 \9;
+  background-color: rgba(0, 0, 0, 0);
+  border: 1px solid #fff;
+  border-radius: 50px;
+}
+
 body.container-fluid {
   padding: 0px;
   margin: 0px;
@@ -128,7 +153,7 @@ div.container-fluid.carousel-card.row {
 }
 
 div.container.hotel {
-  margin: 0px;
+  justify-content: around;
 }
 
 .hotel {
@@ -141,14 +166,40 @@ div.container.hotel {
   justify-content: center;
 }
 
-.hotel-link a, .hotel-icon {
+.hotel-icon-title-container div h5 {
   color: #5F5F5F;
+}
+
+.blank-black {
+  background-color: #313131;
+  display: inline-block;
+}
+
+.nav-tabs.hotel {
+  height: 70px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0px;
+  padding: 0px;
 }
 
 .calender-icon {
   color: #5F5F5F;
   margin-top: 7px;
   margin-left: 0.4em;
+}
+
+.white-background {
+  height: 1500px;
+  width: 100%;
+  background-color: #ffffff;
+  margin-top: 20px;
+  border-top: 3px solid #DBCDB2;
+}
+
+.gold-text {
+  color: #DBCDB2; /*gold text image from the Discover svg*/
 }
 
 /*Footer CSS */
