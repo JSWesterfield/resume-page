@@ -3,28 +3,12 @@
   padding-left: 0px;
   padding-right: 0px;
 }
-   
-div.my-auto.col-md-3 {
-  margin: 0px;
-  border: 1px solid red;
-}
-
-/* navbar #1 */
-.nav-item.nav-one {
-  font-size: 15px;
-  margin-right: 5px; /* add 40px of space between each link in top nav bar*/
-}
 
 /* dark grey background of right side navbar */ 
-nav.navbar.navbar-expand-md {
+nav.navbar.navbar-expand-sm {
   padding: 0px;
   margin-bottom: 0px;
   background-color: #363636;
-}
-
-                  /* navbar #2 */
-.nav-item.nav-two {
-  margin-right: 5px; /* add 40px of space between each link in top nav bar*/
 }
 
 .navbar a {
@@ -42,12 +26,13 @@ nav.navbar.navbar-expand-md {
 }
 
 .top-navlink {
-  font-size: 16px
+  font-size: 15px
 }
 
 .bottom-navlink {
-  font-size: 19x; 
+  font-size: 12x; 
 }
+
 .login-container {
   border: 1px solid #808080;
   letter-spacing: 1px;
