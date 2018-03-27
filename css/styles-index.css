@@ -4,10 +4,9 @@
   padding-right: 0px;
 }
 
-
 nav.navbar.navbar-expand-sm {
   padding: 0px;
-  margin-bottom: 0px;
+  margin: 2em;
   background-color: #363636;
 } /* dark grey background of right side navbar */ 
 
@@ -218,8 +217,9 @@ div.about-div > h2 {
   font-weight: 400;
 } /* About Hotel title */
 
-div.about-div > p {
+div.white-background > h5 {
   margin-top: 1em;
+  font-weight: 400;
   color: #5F5F5F;
 } /* About Hotel paragraph */
 
