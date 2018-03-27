@@ -166,7 +166,8 @@ div.container.hotel {
   background-color: #ffffff;
 }
 
-.hotel-link, .hotel-icon-title-container div h5 {
+/* grab the hotel list a tags, the hotel title and and hotel icon and display flex, turn grey and center them */
+.hotel-link, .hotel-icon-title-container div h5, .list-inline > li > a {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -175,7 +176,7 @@ div.container.hotel {
 
 .blank-black {
   background-color: #313131;
-  display: inline-block;
+  display: block;
 }
 
 .nav-tabs.hotel {
