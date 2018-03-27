@@ -4,12 +4,12 @@
   padding-right: 0px;
 }
 
-/* dark grey background of right side navbar */ 
+
 nav.navbar.navbar-expand-sm {
   padding: 0px;
   margin-bottom: 0px;
   background-color: #363636;
-}
+} /* dark grey background of right side navbar */ 
 
 .navbar a {
   color: #808080; 
@@ -48,28 +48,20 @@ nav.navbar.navbar-expand-sm {
   /* border: 1px solid #808080; */
 }
 
-/* Jumbotron Content*/
 .percentage-text {
   color: #ffffff;
   font-size: 40px;
-}
-
-/* jumbotron icons */
-.carousel-inner > img:nth-child(2n) {
-  color: lime;
-  border-color: 2px solid lime;
-}
+} /* Jumbotron Content*/
 
 div.jumbotron {
   background-color: #313131;
   color: white;
 }
 
-/* colors the area below the carousel, contains the indicators */
 div.carousel-card {
   background-color: #313131;
   z-index: 1;
-}
+} /* colors the area below the carousel, contains the indicators */
 
 .carousel-indicators {
   position: absolute;
@@ -166,18 +158,17 @@ div.container.hotel {
   background-color: #ffffff;
 }
 
-/* grab the hotel list a tags, the hotel title and and hotel icon and display flex, turn grey and center them */
 .hotel-link, .hotel-icon-title-container div h5, .list-inline > li > a {
   display: flex;
   align-items: center;
   justify-content: center;
   color: #5F5F5F;
-}
+} /* grab the hotel list a tags, the hotel title and and hotel icon and display flex, turn grey and center them */
 
 .blank-black {
   background-color: #313131;
-  display: block;
-}
+  display: inline-block;
+} /* Currently NOT working, clearfix doesnt work */
 
 .nav-tabs.hotel {
   height: 70px;
@@ -194,30 +185,43 @@ div.container.hotel {
   margin-left: 0.4em;
 }
 
-.gold-text {
-  color: #DBCDB2;
-}
-
-.center-feature {
-  display: flex;
-  justify-content: end;
-  align-items: end;
-  border: 1px solid #DBCDB2; 
-}
-
-/* Grab all row img icons and break after then, as well as center them. */
-.jumbotron-icon {
+.jumbotron-icon { 
   width: 100px;
   height: 100px;
+} /* Grab all row img icons and break after then, as well as center them. */
 
-}
-
-.white-background {
+/* WHITE BACKGROUND SECTION */
+.white-background { 
   height: 1500px;
   width: 100%;
   background-color: #ffffff;
   margin-top: 20px;
+} /*  White background section */
+
+.gold-text {
+  color: #DBCDB2;
 }
+
+div.background-about-hotel > div > div > .row:nth-of-type(n), div.background-about-hotel > div > p:nth-of-type(2), div.background-about-hotel > div > p > i:nth-of-type(n) { 
+  display: flex;
+  justify-content: center;
+  align-items: center;
+} /* All the .row classes in the image elements within the hotel background section top and bottom */
+
+div.background-about-hotel > div > p > i:nth-of-type(n) {
+  margin-top: 0.2em;
+  margin-left: 0.2em; 
+}
+
+div.about-div > h2 { 
+  margin-top: 2em;
+  font-weight: 400;
+} /* About Hotel title */
+
+div.about-div > p {
+  margin-top: 1em;
+  color: #5F5F5F;
+} /* About Hotel paragraph */
 
 /*Footer CSS */
 .footer {
