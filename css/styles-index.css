@@ -1,20 +1,17 @@
 /*Footer CSS */
-footer {
-  background-color: #313131;;
-  color: #acacac;
+footer
+, .navbar-container {
+  background-color: #313131;
 }
 
-.my-auto {
+.brand-logo {
+  padding: 1.8em;
   background-color: #ffffff;
-  padding-left: 0px;
-  padding-right: 0px;
 }
 
 nav.navbar.navbar-expand-sm {
   padding: 0px;
-  margin: 2em;
-  background-color: #363636;
-} /* dark grey background of right side navbar */ 
+} /* The main top navbar container, we dont want padding for out nav bar due to it having two different colors */
 
 .navbar a {
   color: #808080; 
@@ -22,7 +19,6 @@ nav.navbar.navbar-expand-sm {
 
 .navbar a:hover {
   color: #ffffff; 
-  border-bottom: 3px solid #ffffff;
 }
 
 .link {
@@ -31,17 +27,22 @@ nav.navbar.navbar-expand-sm {
 }
 
 .top-navlink {
-  font-size: 15px
+  font-size: 15px;
 }
 
 .bottom-navlink {
-  font-size: 12x; 
+  font-size: 12px; 
+}
+
+.fa-volume-control-phone {
+  transform: rotate(-70deg);
+  margin-right: 0.7em;
 }
 
 .login-container {
   border: 1px solid #808080;
   letter-spacing: 1px;
-  margin-left: 2px;
+  margin-left: 1px;
 }
 
 .language-container {
@@ -49,8 +50,7 @@ nav.navbar.navbar-expand-sm {
 }
 
 .social-container {
-  font-size: 20px;
-  /* border: 1px solid #808080; */
+  border: 1px solid #808080;
 }
 
 .percentage-text {
@@ -233,15 +233,38 @@ div.white-background > h5 {
 .calender-icon
 , .hotel-link
 , .hotel-icon-title-container div h5
-, .list-inline > li > a  {
+, .list-inline > li > a
+, .page-footer > div > div > div > p:nth-of-type(2n)
+, .about-section-box-container > div > div > p:nth-of-type(1n) {
   color: #5f5f5f;
 }
 
 /*Where are we changing things to THIS grey(#959595)? Heck where ever we want, and you bet it'll be random and unstructered, ha! */
 div.white-background > h5
 , .page-footer a
-, footer {
+, footer
+, .page-footer > div > div > hr:nth-of-type(odd)
+, .about-section-box-container > div > div > p:nth-of-type(2n) {
   color: #acacac;
+}
+
+.about-section-box-container > div > div:nth-of-type(n) {
+  border: 9px solid black;
+  margin: 0.4em;
+  padding: 1.5em;
+}
+
+.about-section-box-container > div > div > h5:nth-of-type(1n)
+, .about-section-box-container > div > div > p:nth-of-type(2n) {
+  margin-bottom: 1em;
+}
+
+.about-section-box-container > div > div > p:nth-of-type(1n) {
+  margin-bottom: 2em;
+}
+
+.about-section-box-container > div > div > h5:nth-of-type(n) {
+  font-weight: bold;
 }
 
 /* Additional Footer CSS apart from the top footer css */
