@@ -4,6 +4,8 @@ footer
   background-color: #313131;
 }
 
+
+
 .brand-logo {
   padding: 1.8em;
   background-color: #ffffff;
@@ -202,7 +204,7 @@ div.container.hotel {
 .white-background { 
   height: 1500px;
   width: 100%;
-  background-color: #ffffff;
+  background-image: url("../assets/images/bg.png");
   margin-top: 20px;
 } /*  White background section */
 
@@ -276,9 +278,21 @@ div.white-background > h6
   font-weight: bold;
 }
 
+/*  Double Carousel Section */
+.dot {
+  height: 25px;
+  width: 25px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+}
+
+
+
+
 /* Additional Footer CSS apart from the top footer css */
-.page-footer a {
-  background-color: #313131;
+footer > div:nth-of-type(1n) {
+  margin-left: 2em;
 }
 
 .page-footer a:hover {
@@ -294,3 +308,4 @@ ul.footer-contact-us > li > i:nth-of-type(n)
 footer.footer-copyright > p > a:nth-of-type(n) {
   margin-left: 0.5em;
 }
+
