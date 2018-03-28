@@ -243,7 +243,7 @@
             </div><!-- floating card end div COL-MD-2 -->
 
             <!-- HOTEL SELECTION SECTION -->
-            <div class="container-fluid hotel">
+            <div class="hotel">
                 <div class="hotel-icon-title-container row d-flex justify-content-around align-items-center">
                     <div class="hotel-icon d-inline">
                         <img src="assets/images/hotel-icon.svg" class="hotel-svg">
@@ -321,11 +321,11 @@
                     <button type="button" class="btn btn-secondary search-book d-flex justify-content-end align-items-end">Search Book</button>
                 </ul>
             
-        </div> <!-- end of container-fluid carousel-card ROW -->
+        </div> <!-- end of carousel-card ROW -->
 
         <hr>
 
-        <div class="white-background container-fluid w-100 col-md-12">
+        <div class="white-background w-100 col-md-12">
             <!-- travel feature -->
             <div class="background-about-hotel mt-5 row">
                 <div class="col-md-3 justify-content-center">
@@ -443,47 +443,83 @@
                         <p>Read More <i class="fa fa-caret-right"></i></p>
                     </div>
                 </div> 
-            </div>
+            </div> <!-- End of Feature boxes section-->
+
+
+            <!-- Double Carousel section -->
+            <div class="double-carousel-container"> <!-- Double carousel container begins here -->
+                <div class="row d-flex align-items-start justify-content-start"> <!-- margin-left 1em to seperate from the announcements div, also add padding: 2em; for interior of container -->
+                    <div class="col-md-7"> <!-- row one is just the title and dots -->
+                        <div class="row">
+                            <div class="col-md-6">
+                                <p class="">News</p>
+                            </div>
+                            <div class="col-md-6 double-carousel-news-title d-flex align-items-center justify-content-end">
+                                <span class="dot empty mr-1"></span>
+                                <span class="dot filled-in mr-1"></span>
+                                <span class="dot filled-in"></span>
+                            </div>
+
+                        </div>
+
+                    </div> <!-- end of 1st title dots row -->   
+                </div> <!-- End of col-md-7 -->
+
+                <!-- overall row -->
+                <div class="row d-flex align-items-start justify-content-start"> <!-- margin-left 1em to seperate from the announcements div, also add padding: 2em; for interior of container -->
+                    <!-- column for the image -->
+                    <div class="col-md-7">
+                        <div class="row">
+                            <div class="col-md-6">
+                                <img src="assets/images/news-turquoise-bg.svg" alt="date_background_icon">
+                            </div>
+
+                            <div class="col-md-6">
+                                <img src="assets/images/news-turquoise-bg.svg" alt="date_background_icon">
+                            </div>
+                        </div> 
+                        <br>
+                        <div class="row">
+                            <div class="col-md-6">
+                                <img src="assets/images/news-turquoise-bg.svg" alt="date_background_icon">
+                            </div>
+
+                            <div class="col-md-6">
+                                <img src="assets/images/news-turquoise-bg.svg" alt="date_background_icon">
+                            </div>
+                        </div>
+                        <br> 
+
+                        <div class="row">
+                            <div class="col-md-6">
+                                <img src="assets/images/news-turquoise-bg.svg" alt="date_background_icon">
+                            </div>
+
+                            <div class="col-md-6">
+                                <img src="assets/images/news-turquoise-bg.svg" alt="date_background_icon">
+                            </div>
+                        </div> 
+                        
+                    </div> 
+                </div> <!-- End of col-md-7 -->
+
+                <!-- Beginning of col-md-5 -->
+                <div class="announcements row d-flex align-items-start justify-content-start">
+                       
+                </div>
+
+                
+
+            </div> <!-- Double carousel container ends here -->
 
         </div> <!-- end of CONTAINER FLUID RESPONSIVENESS, continue at your own risk-->
         
-        
-
-        <!-- Double Carousel section -->
-        <div class="col-md-12 double-carousel-container"> <!-- Double carousel container begins here -->
-            <div class="double-carousel-one"> <!-- margin-left 1em to seperate from the announcements div, also add padding: 2em; for interior of container -->
-                <div class="double-carousel-title-dots-container row"> <!-- row one is just the title and dots -->
-                    <p class="double-carousel-news-title d-flex align-items-start justify-content-start">News</p>
-                    <div class="double-carousel-news-title d-flex align-items-end justify-content-end"> <!-- Fake carousel dots -->
-                        <span class="dot"></span>
-                        <span class="dot"></span>
-                        <span class="dot"></span>
-                    </div>
-                </div>
-
-                <div class="row"> <!-- row two is our first our news article -->
-                    <div>
-                        <img src="assets/images/news-turquoise-bg.svg" alt="">
-                    </div> <!-- images & date-->
-                    <div></div>
-                </div>
-                
-            </div>
-
-            <div class="row double-carousel-two">
-                <p class="double-carousel-news-title">Announcements</p>
-                <div></div>
-            </div>
-
-        </div> <!-- Double carousel container ends here -->
-    
-
 
         <!--FOOTER SECTION -->
         <footer class="page-footer font-small pt-4 mt-4">
 
             <!--Footer Links-->
-            <div class="container-fluid text-md-left">
+            <div class="text-md-left">
                 <div class="row">
                     <!--First column-->
                     <div class="col-md-4">
@@ -578,7 +614,6 @@
             </div> <!--/.Copyright-->
         </footer> <!--/.Footer-->
 
-        
     </body> <!-- end of container-fluid -->
 </html>
 
