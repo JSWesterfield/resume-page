@@ -164,7 +164,11 @@ div.container.hotel {
 }
 
 .hotel-link, .hotel-icon-title-container div h5
-, .list-inline > li > a {
+, .list-inline > li > a
+, .about-section-box-container > div > div > h5
+, .about-section-box-container > div > div > p:nth-last-of-type(1n)
+, .about-section-box-container > div > div > p:nth-last-of-type(2n)
+ {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -214,9 +218,14 @@ div.background-about-hotel > div > div > .row:nth-of-type(n)
   align-items: center;
 } /* All the .row classes in the image elements within the hotel background section top and bottom */
 
-div.background-about-hotel > div > p > i:nth-of-type(n) {
+div.background-about-hotel > div > p > i:nth-of-type(n)
+, .about-section-box-container > div > div > p > i:nth-of-type(n) {
   margin-top: 0.2em;
   margin-left: 0.2em; 
+}
+
+.about-section-box-container {
+  margin-top: 4.2em;
 }
 
 div.about-div > h2 { 
@@ -224,7 +233,7 @@ div.about-div > h2 {
   font-weight: 400;
 } /* About Hotel title */
 
-div.white-background > h5 {
+div.white-background > h6 {
   margin-top: 1em;
   font-weight: 400;
 } /* About Hotel paragraph */
@@ -240,7 +249,7 @@ div.white-background > h5 {
 }
 
 /*Where are we changing things to THIS grey(#959595)? Heck where ever we want, and you bet it'll be random and unstructered, ha! */
-div.white-background > h5
+div.white-background > h6
 , .page-footer a
 , footer
 , .page-footer > div > div > hr:nth-of-type(odd)
