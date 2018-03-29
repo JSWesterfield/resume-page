@@ -1,0 +1,394 @@
+/*Footer CSS */
+footer
+, .navbar-container {
+  background-color: #313131;
+}
+
+.brand-logo {
+  padding: 1.8em;
+  background-color: #ffffff;
+}
+
+nav.navbar.navbar-expand-sm {
+  padding: 0px;
+} /* The main top navbar container, we dont want padding for out nav bar due to it having two different colors */
+
+.navbar a {
+  color: #808080; 
+}
+
+.navbar a:hover {
+  color: #ffffff; 
+}
+
+.link {
+  margin-left: 40px;
+  margin-right: 30px;
+}
+
+.top-navlink {
+  font-size: 15px;
+}
+
+.bottom-navlink {
+  font-size: 12px; 
+}
+
+.fa-volume-control-phone {
+  transform: rotate(-70deg);
+  margin-right: 0.7em;
+}
+
+.login-container {
+  border: 1px solid #808080;
+  letter-spacing: 1px;
+  margin-left: 1px;
+}
+
+.language-container {
+  border: 1px solid #808080;
+}
+
+.social-container {
+  border: 1px solid #808080;
+}
+
+.percentage-text {
+  color: #ffffff;
+  font-size: 40px;
+} /* Jumbotron Content*/
+
+div.jumbotron {
+  background-color: #313131;
+  color: white;
+}
+
+div.carousel-card {
+  background-color: #313131;
+  z-index: 1;
+} /* colors the area below the carousel, contains the indicators */
+
+.carousel-indicators {
+  position: absolute;
+  bottom: 10px;
+  left: 0;
+  z-index: 15;
+  width: 10%;
+  padding-left: 0;
+  margin-left: 0px;
+  text-align: center;
+  list-style: none;
+}
+
+.carousel-indicators li {
+  display: inline-block;
+  width: 15px;
+  height: 15px;
+  margin: 1px;
+  text-indent: -999px;
+  cursor: pointer;
+  background-color: #000 \9;
+  background-color: rgba(0, 0, 0, 0);
+  border: 1px solid #fff;
+  border-radius: 50px;
+}
+
+body.container-fluid {
+  padding: 0px;
+  margin: 0px;
+}
+
+div.container-fluid.carousel-card.row {
+  margin: 0px;
+}
+
+.jumbotron-title {
+  text-transform: uppercase;
+  font-weight: bolder;
+}
+
+.btn-group button {
+  background-color: #ffffff; 
+  text-transform: uppercase;
+  color: #808080; /* White text */
+  padding: 10px 24px; /* Some padding */
+  cursor: pointer; /* Pointer/hand icon */
+  float: left; /* Float the buttons side by side */
+  border: none;
+}
+
+.btn-group button:hover {
+  text-transform: uppercase;
+  color: #000000; /* White text */
+  padding: 10px 24px; /* Some padding */
+  float: left; /* Float the buttons side by side */
+  border: none;
+  z-index: 2;
+}
+
+.card {
+  background-color: #313131!important;
+  float: right;
+  border: none!important;
+}
+
+.card-background {
+  padding: 0px;
+  margin: 0px;  
+  z-index: 0;
+  position: relative;
+}
+
+.card-icon {
+  z-index: 1;
+  position: absolute;
+}
+
+.list-group-item  p {
+  font-weight: 800;
+  z-index: 2;
+  position: absolute;
+}
+
+.background_weather {
+  background-image: url("sun_icon");
+  background: #000000;
+}
+
+div.container.hotel {
+  justify-content: around;
+}
+
+.hotel {
+  background-color: #ffffff;
+}
+
+.boxes-row-one {
+  width: 100%;
+
+}
+
+.boxes-row-two {
+  width: 100%;
+
+}
+
+.hotel-link, .hotel-icon-title-container div h5
+, .list-inline > li > a
+, .about-section-box-container > div > div > h5
+, .about-section-box-container > div > div > p:nth-last-of-type(1n)
+, .about-section-box-container > div > div > p:nth-last-of-type(2n)
+ {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+} /* grab the hotel list a tags, the hotel title and and hotel icon and display flex, turn grey and center them */
+
+.blank-black {
+  background-color: #313131;
+  display: inline-block;
+} /* Currently NOT working, clearfix doesnt work */
+
+.nav-tabs.hotel {
+  height: 70px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0px;
+  padding: 0px;
+}
+
+.calender-icon {
+  margin-top: 7px;
+  margin-left: 0.4em;
+}
+
+.jumbotron-icon { 
+  width: 100px;
+  height: 100px;
+} /* Grab all row img icons and break after then, as well as center them. */
+
+/* WHITE BACKGROUND SECTION */
+.white-background { 
+  height: 1800px;
+  width: 100%;
+  background-image: url("../assets/images/bg.png");
+  margin-top: 20px;
+} /*  White background section */
+
+.gold-text {
+  color: #E1D5BF;
+}
+
+div.background-about-hotel > div > div > .row:nth-of-type(n)
+, div.background-about-hotel > div > p:nth-of-type(2)
+, div.background-about-hotel > div > p > i:nth-of-type(n) { 
+  display: flex;
+  justify-content: center;
+  align-items: center;
+} /* All the .row classes in the image elements within the hotel background section top and bottom */
+
+div.background-about-hotel > div > p > i:nth-of-type(n)
+, .about-section-box-container > div > div > p > i:nth-of-type(n) {
+  margin-top: 0.2em;
+  margin-left: 0.2em; 
+}
+
+.about-section-box-container {
+  margin-top: 4.2em;
+}
+
+div.about-div > h1 { 
+  margin-top: 2em;
+  font-weight: 400;
+} /* About Hotel title */
+
+div.white-background > h6 {
+  margin-top: 1em;
+  font-weight: 400;
+} /* About Hotel paragraph */
+
+/*Where are we changing things to grey(#5f5f5f)? All over the place, randomly! */
+.calender-icon
+, .hotel-link
+, .hotel-icon-title-container div h5
+, .list-inline > li > a
+, .page-footer > div > div > div > p:nth-of-type(2n)
+, .about-section-box-container > div > div > p:nth-of-type(1n) {
+  color: #5f5f5f;
+}
+
+/*Where are we changing things to THIS grey(#959595)? Heck where ever we want, and you bet it'll be random and unstructered, ha! */
+div.white-background > h6
+, .page-footer a
+, footer
+, .page-footer > div > div > hr:nth-of-type(odd)
+, .about-section-box-container > div > div > p:nth-of-type(2n) {
+  color: #acacac;
+}
+
+.about-section-box-container > div > div:nth-of-type(n) {
+  border: 8px solid black;
+  margin: 0.3em;
+}
+
+.about-section-box-container > div > div > h5:nth-of-type(1n)
+, .about-section-box-container > div > div > p:nth-of-type(2n) {
+  margin-bottom: 1em;
+}
+
+.about-section-box-container > div > div > p:nth-of-type(1n) {
+  margin-bottom: 2em;
+}
+
+.about-section-box-container > div > div > h5:nth-of-type(1n) {
+  font-weight: bold;
+}
+
+.col-md-4 {
+    -webkit-box-flex: 0;
+    -ms-flex: 0 0 33.333333%;
+    flex: 0 0 33.333333%;
+    max-width: 32.333333%!important;
+}
+
+/*  Double Carousel Section */
+.dot {
+  height: 10px;
+  width: 10px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  border: 1px solid #D0D2D9;
+}
+
+.dot.empty {
+  background-color: #ffffff;
+}
+
+.dot.filled-in {
+  background-color: #D0D2D9;
+  color: #D0D2D9;
+}
+
+.double-carousel-container {
+  margin-top: 2em;
+  margin-left: 0.5em;
+  border: 1px solid #93ACC7;
+}
+
+.news-title {
+  color: #93ACC7;
+}
+
+.announcements-title {
+  color: #3FAF6C;
+}
+
+.title-size {
+  font-size: 25px;
+}
+
+.news-image-background {
+  background-color: #D0D2D9;
+}
+
+.news-image-background > p:nth-of-type(n)
+, .news-image-background > img:nth-of-type(n) {
+  margin-left: -1em;
+}
+
+.news-image-background > img:nth-of-type(1)
+, .news-image-background > img:nth-of-type(2) {
+  position: absolute;
+}
+
+.news-image-background > img:nth-of-type(1) {
+  z-index: 0;
+}
+
+.news-image-background > img:nth-of-type(2) {
+  z-index: 1;
+}
+
+.news-text > p
+, .news-text > h6 {
+  line-height: 1.2;
+}
+
+.news-text > p:nth-child(3) {
+  margin-bottom: 0px;
+}
+
+.announcements {
+  color: white;
+  background-color: #D0D2D9;
+  width: 100%;
+  height: 60%;
+  margin-bottom: 2em;
+}
+
+.products {
+  color: white;
+  background-color: #D0D2D9;
+  width: 100%;
+  height: 40%
+}
+
+
+/* Additional Footer CSS apart from the top footer css */
+footer > div:nth-of-type(1n) {
+  margin-left: 2em;
+}
+
+.page-footer a:hover {
+  color: #ffffff;
+  text-decoration: none;
+}
+
+ul.footer-contact-us > li > i:nth-of-type(n)
+, ul.footer-contact-us > li > a:nth-of-type(n) {
+  color: #B7A073;
+}
+
+
