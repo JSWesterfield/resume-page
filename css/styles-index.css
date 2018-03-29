@@ -278,7 +278,6 @@ div.white-background > h6
   font-weight: bold;
 }
 
-
 /*  Double Carousel Section */
 .dot {
   height: 15px;
@@ -299,14 +298,13 @@ div.white-background > h6
   color: #D0D2D9;
 }
 
-.double-carousel-title-dots-container > p:nth-of-type(n) {
-  border: 1px solid red;
-  height: 3em;
-  width: 100%;
+.double-carousel-container {
+  margin-top: 2em;
+  margin-left: 12%;
 }
 
-.news-image {
-  background-color: grey;
+.news-image-background {
+  background-color: #9c9c9c;
 }
 
 .announcements {
@@ -341,6 +339,6 @@ ul.footer-contact-us > li > i:nth-of-type(n)
 }
 
 footer.footer-copyright > p > a:nth-of-type(n) {
-  margin-left: 0.5em;
+  
 }
 
