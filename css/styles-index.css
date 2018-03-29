@@ -4,8 +4,6 @@ footer
   background-color: #313131;
 }
 
-
-
 .brand-logo {
   padding: 1.8em;
   background-color: #ffffff;
@@ -202,7 +200,7 @@ div.container.hotel {
 
 /* WHITE BACKGROUND SECTION */
 .white-background { 
-  height: 1700px;
+  height: 1800px;
   width: 100%;
   background-image: url("../assets/images/bg.png");
   margin-top: 20px;
@@ -230,7 +228,7 @@ div.background-about-hotel > div > p > i:nth-of-type(n)
   margin-top: 4.2em;
 }
 
-div.about-div > h2 { 
+div.about-div > h1 { 
   margin-top: 2em;
   font-weight: 400;
 } /* About Hotel title */
@@ -304,13 +302,36 @@ div.white-background > h6
 }
 
 .news-image-background {
-  background-color: #9c9c9c;
+  background-color: #D0D2D9;
 }
 
 .news-image-background > p:nth-of-type(n)
 , .news-image-background > img:nth-of-type(n) {
   margin-left: -1em;
 }
+
+.news-image-background > img:nth-of-type(1)
+, .news-image-background > img:nth-of-type(2)
+, .news-image-background > img:nth-of-type(3) {
+  position: absolute;
+}
+
+.news-image-background > img:nth-of-type(1) {
+  z-index: 0;
+}
+
+.news-image-background > img:nth-of-type(2) {
+  z-index: 1;
+}
+
+.news-image-background > img:nth-of-type(3) {
+ z-index: 2;
+}
+
+.news-background {
+  border: 1px solid red;
+  width: 100%;
+} 
 
 .news-text > p
 , .news-text > h6 {
