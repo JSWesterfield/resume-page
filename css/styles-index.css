@@ -74,23 +74,23 @@ div.carousel-card {
   left: 0;
   z-index: 15;
   width: 10%;
-  padding-left: 0;
   margin-left: 0px;
-  text-align: center;
-  list-style: none;
+  list-style: circle;
 }
 
 .carousel-indicators li {
   display: inline-block;
-  width: 15px;
-  height: 15px;
-  margin: 1px;
-  text-indent: -999px;
+  margin: 0.2em;
   cursor: pointer;
   background-color: #000 \9;
   background-color: rgba(0, 0, 0, 0);
-  border: 1px solid #fff;
-  border-radius: 50px;
+  border: 1px solid #ffffff;
+}
+
+.carousel-indicators > li:nth-of-type(n) {
+  width: 14px;
+  height: 14px;
+  border-radius: 50%;
 }
 
 body.container-fluid {
@@ -170,7 +170,6 @@ div.container.hotel {
 
 .boxes-row-two {
   width: 100%;
-
 }
 
 .hotel-link, .hotel-icon-title-container div h5
@@ -333,13 +332,15 @@ div.white-background > h6
   background-color: #D0D2D9;
 }
 
-.news-image-background > p:nth-of-type(n)
-, .news-image-background > img:nth-of-type(n) {
+.news-image-background > div > p:nth-of-type(n)
+, .news-image-background > img:nth-of-type(n)
+, .news-image-bckground > p:nth-of-type(n) {
   margin-left: -1em;
 }
 
 .news-image-background > img:nth-of-type(1)
-, .news-image-background > img:nth-of-type(2) {
+, .news-image-background > img:nth-of-type(2)
+, .news-image-background > p:nth-of-type(n) {
   position: absolute;
 }
 
@@ -347,16 +348,38 @@ div.white-background > h6
   z-index: 0;
 }
 
-.news-image-background > img:nth-of-type(2) {
+.news-image-background > img:nth-of-type(2) { /* our calender icon*/
   z-index: 1;
+  margin-left: 2em;
+  margin-top: 0.7em;
 }
+
+.news-image-background > p:nth-of-type(n) { /* letters for calender dates in news */
+  z-index: 2;
+  margin-left: 1.5em;
+  margin-top: 2.5em;
+  color: #ffffff;
+  font-weight: bolder;
+  font-size: 22px;
+}
+
+.news-button-span {
+  width: 100%;
+  border: 1px solid #93ACC7;
+  margin: 1em;
+}
+
+.news-button-span > div > div > p:nth-of-type(n) {
+  margin-bottom: 0px; /* end default margin, and replace with a padding around this paragraph element*/
+  padding: 0.5em
+} 
 
 .news-text > p
 , .news-text > h6 {
   line-height: 1.2;
 }
 
-.news-text > p:nth-child(3) {
+.news-text > p:nth-child(3) { /* Line height of our news text to fit in row && column */
   margin-bottom: 0px;
 }
 
@@ -391,4 +414,6 @@ ul.footer-contact-us > li > i:nth-of-type(n)
   color: #B7A073;
 }
 
-
+.footer-service-links > li:nth-of-type(n) {
+  margin-bottom: 2em;
+}

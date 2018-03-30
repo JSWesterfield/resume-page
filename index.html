@@ -100,14 +100,16 @@
         
         
        <div class="carousel-card row">
-
+            <ol class="carousel-indicators">
+                <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active individual-carousel-indicator"></li>
+                <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+                <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+                <li data-target="#carouselExampleIndicators" data-slide-to="3"></li>
+                <li data-target="#carouselExampleIndicators" data-slide-to="4"></li>
+            </ol>
             <!-- CAROUSEL SECTION -->
             <div id="carouselExampleIndicators d-flex justify-content-start" class="carousel slide col-md-10" data-ride="carousel">
-                <ol class="carousel-indicators">
-                    <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active individual-carousel-indicator"></li>
-                    <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
-                    <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
-                </ol>
+                
                 <div class="carousel-inner">
                     <div class="carousel-item active">
                         <!-- beginning of jumbotron-->
@@ -250,8 +252,7 @@
                     <div class="d-inline">
                         <h5 class="nav nav-tabs hotel"> Hotel</h5>
                     </div>
-                    <div class="blank-black col-md-10 d-flex
-                    ">
+                    <div class="blank-black col-md-10 d-flex">
                         <!-- Empty Space -->
                     </div>
                 </div>
@@ -259,6 +260,7 @@
                 <ul class="list-inline row hotel">
                     <li class="col-md-2 hotel-link"><a href="#">Arrival</a></li>
                     <li class="col-md-2 hotel-link"><a href="#">Going</a></li>
+                    <!-- <li class="col-md-2 hotel-link"><a href="#">Room</a></li> -->
                     <li class="col-md-2 hotel-link"><a href="#">Person</a></li>
                     <li class="col-md-2 hotel-link"><a href="#">Child</a></li>
                     <li class="col-md-2 hotel-link"><a href="#">Day</a></li>
@@ -267,7 +269,7 @@
                 <ul class="nav row">
                     <li class="active col-md-2">
                         <div class="form-control input-group date" data-provide="datepicker">
-                            <input type="text" class="form-control" data-date-format="mm/dd/yyyy" placeholder="Arrival">
+                            <input type="text" class="form-control" data-date-format="mm/dd/yyyy" placeholder="16.07.2015">
                             <div class="input-group-addon calender-icon"> 
                                 <i class="fa fa-calendar"></i>
                             </div>
@@ -275,7 +277,7 @@
                     </li>
                     <li class="col-md-2">
                         <div class="form-control input-group date" data-provide="datepicker">
-                            <input type="text" class="form-control" data-date-format="mm/dd/yyyy" placeholder="Going">
+                            <input type="text" class="form-control" data-date-format="mm/dd/yyyy" placeholder="28.07.2015">
                             <div class="input-group-addon calender-icon">
                                 <i class="fa fa-calendar"></i>
                             </div>
@@ -293,9 +295,9 @@
                     <li class="col-md-2">
                         <select class="form-control select-menu">
                             <option disabled selected value> -- select a Child -- </option>
-                            <option value="blank" selected="selected"></option></option>
+                            <option value="blank" ></option></option>
                             <option value="1">1</option>
-                            <option value="2">2</option>
+                            <option value="2" selected="selected">2</option>
                             <option value="3">3</option>
                             <option value="4">4</option>
                             <option value="5">5</option>
@@ -306,8 +308,8 @@
                     <li class="col-md-2">
                         <select class="form-control select-menu">
                             <option disabled selected value> -- select a Day -- </option>
-                            <option value="blank" selected="selected"></option></option>
-                            <option value="1">1</option>
+                            <option value="blank" ></option></option>
+                            <option value="1" selected="selected">1</option>
                             <option value="2">2</option>
                             <option value="3">3</option>
                             <option value="4">4</option>
@@ -458,6 +460,7 @@
                                 <span class="dot empty mr-2"></span>
                                 <span class="dot filled-in mr-2"></span>
                                 <span class="dot filled-in"></span>
+                                
                             </div>
                         </div>
                     </div> <!-- end of 1st title dots row -->   
@@ -469,8 +472,11 @@
                     <div class="col-md-7 mb-0">
                         <div class="row">
                             <div class="col-md-6 news-image-background">
-                                <img class="d-flex align-content-start justify-content-start" src="assets/images/news-turquoise-bg.svg" alt=""> <!-- nth-of-type(2) -->
-                                <img class="date-icon d-flex align-content-center justify-content-center" src="assets/images/date-icon.svg" alt="date_icon">  <!-- nth-of-type(3) -->
+                                <img class="d-flex align-items-start justify-content-start" src="assets/images/news-turquoise-bg.svg" alt=""> <!-- nth-of-type(1) -->
+                                <img class="date-icon d-flex align-items-center justify-content-center" src="assets/images/date-icon.svg" alt="date_icon">  <!-- nth-of-type(2) -->
+                                <p>29 
+                                    <br> Jan
+                                </p>
                             </div>
 
                             <div class="col-md-6 news-text">
@@ -483,8 +489,11 @@
 
                         <div class="row">
                             <div class="col-md-6 news-image-background">
-                                <img class="d-flex align-content-start justify-content-start" src="assets/images/news-turquoise-bg.svg" alt=""> <!-- nth-of-type(2) -->
-                                <img class="date-icon d-flex align-content-start justify-content-start" src="assets/images/date-icon.svg" alt="date_icon">  <!-- nth-of-type(3) -->
+                                <img class="d-flex align-items-start justify-content-start" src="assets/images/news-turquoise-bg.svg" alt=""> <!-- nth-of-type(1) -->
+                                <img class="date-icon d-flex align-items-center justify-content-center" src="assets/images/date-icon.svg" alt="date_icon">  <!-- nth-of-type(2) -->
+                                <p class="d-flex align-items-center justify-content-center">15 
+                                    <br>Feb
+                                </p>
                             </div>
 
                             <div class="col-md-6 news-text">
@@ -497,8 +506,11 @@
 
                         <div class="row">
                             <div class="col-md-6 news-image-background">
-                                <img class="d-flex align-content-start justify-content-start" src="assets/images/news-turquoise-bg.svg" alt=""> <!-- nth-of-type(2) -->
-                                <img class="date-icon d-flex align-content-start justify-content-start" src="assets/images/date-icon.svg" alt="date_icon">  <!-- nth-of-type(3) -->
+                                <img class="d-flex align-items-start justify-content-start" src="assets/images/news-turquoise-bg.svg" alt=""> <!-- nth-of-type(1) -->
+                                <img class="date-icon d-flex align-items-start justify-content-start" src="assets/images/date-icon.svg" alt="date_icon">  <!-- nth-of-type(2) -->
+                                <p>2 
+                                    <br>Mar
+                                </p>
                             </div>
 
                             <div class="col-md-6 news-text">
@@ -507,6 +519,17 @@
                                 <p>Read More <i class="fa fa-caret-right"></i></p>
                             </div>
                         </div> 
+
+                        <div class="row news-button-span">
+                            <div class="col-md-12 d-flex  align-items-center justify-content-center">
+                                <div class="">
+                                    <p>View All 
+                                        <i class="fa fa-angle-right"></i>
+                                    </p>           
+                                </div>
+                            </div>
+                        </div> 
+
                         
                     </div> <!-- End of col-md-7 -->
 
@@ -565,7 +588,7 @@
                     <!--Second column-->
                     <div class="col-md-2 mx-auto">
                         <h4 class="mb-4 mt-3">NorthSea Hotel</h4>
-                        <ul class="list-unstyled">
+                        <ul class="list-unstyled footer-service-links">
                             <li>
                                 <a href="#!">About Us</a>
                             </li>
@@ -589,28 +612,28 @@
                                 <i class="fa fa-map-marker">
                                 </i>
                                 <a href="#!">Address: </a>
-                                <P>1100 Picop Blvd <br> Santa Monica, CA 90405 <br> United States <br>
-                                </P> 
+                                <p>1100 Picop Blvd <br> Santa Monica, CA 90405 <br> United States <br>
+                                </p> 
                             </li> <hr>
                             <li>
                                 <i class="fa fa-phone">
                                 </i>
                                 <a href="#!">Phone: </a>
-                                <P>1100 Picop Blvd <br> Santa Monica, CA 90405 <br> United States <br>
-                                </P> 
+                                <p>1100 Picop Blvd <br> Santa Monica, CA 90405 <br> United States <br>
+                                </p> 
                             </li> <hr>
                             <li>
                                 <i class="fa fa-paper-plane">
                                 </i>
                                 <a href="#!">Email: </a>
-                                <P>1100 Picop Blvd <br> Santa Monica, CA 90405 <br> United States <br>
-                                </P> 
+                                <p>1100 Picop Blvd <br> Santa Monica, CA 90405 <br> United States <br>
+                                </p> 
                             </li> <hr>
                             <li>
                                 <i class="fa fa-compass">
                                 </i>
                                 <a href="#!">GPS: </a>
-                                <P>1100 Picop Blvd <br> Santa Monica, CA 90405 <br> United States <br>
+                                <p>1100 Picop Blvd <br> Santa Monica, CA 90405 <br> United States <br>
                                 </P> 
                             </li> 
                         </ul>

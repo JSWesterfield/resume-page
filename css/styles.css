@@ -23,12 +23,18 @@ nav.navbar.navbar-expand-sm {
 
 .navbar a:hover {
   color: #ffffff; 
+  border-bottom: 1px solid #ffffff;
 }
 
 .link {
   margin-left: 40px;
   margin-right: 30px;
 }
+
+/* .nav-item:hover {
+  color: #ffffff; 
+  border-bottom: 1px solid #ffffff;
+} */
 
 .top-navlink {
   font-size: 15px;
