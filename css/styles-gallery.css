@@ -23,8 +23,8 @@
 
 .gallery-black-background > div > img:nth-of-type(n) {
     margin-top: 100px;
-    width: 100px;
-    height: 100px;
+    width: 250px;
+    height: 250px;
     background: #989898;
     display: flex;
     flex-direction: column;
@@ -44,7 +44,7 @@
 
 .previous-next-button-container > div > a > i:nth-of-type(n) {
     border: 1px solid #acacac;
-    margin: 1em;
+    margin-left: 2em;
 }
 
 .floating-box {
