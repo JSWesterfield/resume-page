@@ -6,6 +6,7 @@
         <title>Nortsea</title>
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <link rel="stylesheet" type="text/css" href="css/styles-gallery.css" />
+        <link rel="stylesheet" type="text/css" href="css/styles.css" />
         <!-- <link rel="stylesheet" type="text/css" href="css/bootstrap/bootstrap.min.css" /> -->
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
@@ -98,14 +99,18 @@
             </div>
         </nav> <!-- end of navigation --> 
         
+        <!-- start of body -->
         <div>
             <div class="gallery-black-background">
-                <h5>Gallery</h5>
-                <p>
-                    <a href="">Home </a>/
-                    <a href="">Pages </a>/
-                    <a href="">Gallery </a>/
-                </p>
+                <div class="pseudo-nav-container w-100">
+                    <h5 class="d-flex align-items-center justify-content-start">Gallery</h5>
+                    <p class="d-flex align-items-end justify-content-end">
+                            <a href="">Home /</a>
+                            <a href="">Pages /</a>
+                            <a href="">Gallery </a>
+                    </p>
+                </div>
+                
                 <div class="d-flex align-items-center justify-content-center">
                     <img src="assets/images/default-image-icon.svg" alt="default_image_icon">
                 </div>
@@ -114,11 +119,11 @@
             <div class="gallery-white-background">
                 <h5>Gallery</h5>
                 <div> <!-- make inline -->
-                    <button type="button">All</button> <!-- make borer radius of bootstrap buttons 0%, or make these a tags that are selectable-->
-                    <button type="button">Room</button>
-                    <button type="button">Spa</button>
-                    <button type="button">Bar</button>
-                    <button type="button">Gym</button>
+                    <a type="button">All</a> <!-- make borer radius of bootstrap buttons 0%, or make these a tags that are selectable-->
+                    <a type="button">Room</a>
+                    <a type="button">Spa</a>
+                    <a type="button">Bar</a>
+                    <a type="button">Gym</a>
 
                     <!-- right align-->
                     <div class="previous-next-button-container">
@@ -135,6 +140,10 @@
                     <div>
                         <img src="assets/images/default-image-icon.svg" alt="default_image_icon">
                     </div>
+                    <div>
+                        <img src="assets/images/default-image-icon.svg" alt="default_image_icon">
+                    </div>
+
                     <div>
                         <img src="assets/images/default-image-icon.svg" alt="default_image_icon">
                     </div>

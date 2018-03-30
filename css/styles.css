@@ -1,120 +1,130 @@
-* {
-   background-color: #313131; 
+/*
+NAVBAR and FOOTER CSS ONLY!! 
+*/
+
+/*Footer CSS */
+footer
+, .navbar-container {
+  background-color: #313131;
 }
 
-.hotel-icon-container, .hotel-icon {
-  height: 107px;
+.brand-logo {
+  padding: 1.8em;
   background-color: #ffffff;
 }
 
-.hotel-brand {
-  background-color: #ffffff;
-}
-
-nav {
-  border-bottom: 1px solid #808080;
-}
-
-.navbar-nav {
-  float: left;
-}
-                    /* navbar #1 */
-.nav-item.nav-one {
-  font-size: 15px;
-  margin-right: 15px; /* add 40px of space between each link in top nav bar*/
-}
-
-.nav-item.nav-one:hover {
-  border-bottom: 4px solid #ffffff;
-}
-
-                  /* navbar #2 */
-.nav-item.nav-two {
-  font-size: 15px;
-  margin-right: 15px; /* add 40px of space between each link in top nav bar*/
-}
-
-.nav-item.nav-two:hover {
-  border-bottom: 4px solid #ffffff; /*add a white indicator for the bottom of the navbar link */
-}
-
-.navbar-link {
-  color: #808080;
-}
+nav.navbar.navbar-expand-sm {
+  padding: 0px;
+} /* The main top navbar container, we dont want padding for out nav bar due to it having two different colors */
 
 .navbar a {
   color: #808080; 
 }
 
 .navbar a:hover {
-  color: white; 
+  color: #ffffff; 
 }
 
-.nav-link.log-in {
+.link {
+  margin-left: 40px;
+  margin-right: 30px;
+}
+
+.top-navlink {
+  font-size: 15px;
+}
+
+.bottom-navlink {
+  font-size: 12px; 
+}
+
+.fa-volume-control-phone {
+  transform: rotate(-70deg);
+  margin-right: 0.7em;
+}
+
+.login-container {
+  border: 1px solid #808080;
   letter-spacing: 1px;
-}
-
-.nav-item.social-media a {
   margin-left: 1px;
-  margin-right: 1px;
-  width: 4px;
-  height: 4px;
 }
 
-.nav-item.social-media a i {
-  color: #808080;
+.language-container {
+  border: 1px solid #808080;
 }
 
-.search-icon-container {
-  width: 27px;
-  height: 27px;
+.social-container {
+  border: 1px solid #808080;
 }
 
-.form-inline {
-  background-color: #313131;
-  color: white;
-  float: right;
+body.container-fluid {
+  padding: 0px;
+  margin: 0px;
 }
 
-/* Jumbotron Content*/
-.percentage-text {
-  color: #ffffff;
-  font-size: 40px;
-}
-
-div.jumbotron {
-  background-color: #313131;
-  color: white;
-}
-
-.jumbotron-title {
+.btn-group button {
+  background-color: #ffffff; 
   text-transform: uppercase;
-  font-weight: bolder;
+  color: #808080; /* White text */
+  padding: 10px 24px; /* Some padding */
+  cursor: pointer; /* Pointer/hand icon */
+  float: left; /* Float the buttons side by side */
+  border: none;
 }
 
-.explore {  /* explore it button*/
-  color: #808080;
-  font-size: 10px;
-  background-color: #ffffff;
-  border-radius: 100%;
+.btn-group button:hover {
+  text-transform: uppercase;
+  color: #000000; /* White text */
+  padding: 10px 24px; /* Some padding */
+  float: left; /* Float the buttons side by side */
+  border: none;
+  z-index: 2;
 }
 
-/* Footer CSS */
-.footer {
-  position: fixed;
-  left: 0;
-  bottom: 0;
-  width: 100%;
-  background-color: #313131;
-  color: white;
-  text-align: center;
+.list-group-item  p {
+  font-weight: 800;
+  z-index: 2;
+  position: absolute;
 }
 
-.page-footer {
-  background-color: #313131;
-  color: white;
+div.container.hotel {
+  justify-content: around;
 }
 
-.page-footer a {
+.gold-text {
+  color: #E1D5BF;
+}
+
+/*Where are we changing things to grey(#5f5f5f)? All over the place, randomly! */
+.page-footer > div > div > div > p:nth-of-type(2n) {
+  color: #5f5f5f;
+}
+
+/*Where are we changing things to THIS grey(#959595)? Heck where ever we want, and you bet it'll be random and unstructered, ha! */
+.page-footer a
+, footer
+, .page-footer > div > div > hr:nth-of-type(odd) {
+  color: #acacac;
+}
+
+.col-md-4 {
+    -webkit-box-flex: 0;
+    -ms-flex: 0 0 33.333333%;
+    flex: 0 0 33.333333%;
+    max-width: 32.333333%!important;
+}
+
+/* Additional Footer CSS apart from the top footer css */
+footer > div:nth-of-type(1n) {
+  margin-left: 2em;
+}
+
+.page-footer a:hover {
   color: #ffffff;
+  text-decoration: none;
+}
+
+ul.footer-contact-us > li > i:nth-of-type(n)
+, ul.footer-contact-us > li > a:nth-of-type(n) {
+  color: #B7A073;
 }
