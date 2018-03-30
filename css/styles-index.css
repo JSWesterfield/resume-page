@@ -65,14 +65,14 @@ div.jumbotron {
 }
 
 div.carousel-card {
-  z-index: 1;
+  /* z-index: 1; */
 } /* colors the area below the carousel, contains the indicators */
 
 .carousel-indicators {
   position: absolute;
   bottom: 10px;
   left: 0;
-  z-index: 15;
+  /* z-index: 15; */
   width: 10%;
   list-style: circle;
 }
@@ -125,12 +125,12 @@ div.container-fluid.carousel-card.row {
   padding: 10px 24px; /* Some padding */
   float: left; /* Float the buttons side by side */
   border: none;
-  z-index: 2;
+  /* z-index: 2; */
 }
 
 .card {
   background-color: #313131!important;
-  float: right;
+  /* float: right; */
   border: none!important;
 }
 
@@ -346,17 +346,17 @@ div.white-background > h6
 }
 
 .news-image-background > img:nth-of-type(1) {
-  z-index: 0;
+  /* z-index: 0; */
 }
 
 .news-image-background > img:nth-of-type(2) { /* our calender icon*/
-  z-index: 1;
+  /* z-index: 1; */
   margin-left: 2em;
   margin-top: 0.7em;
 }
 
 .news-image-background > p:nth-of-type(n) { /* letters for calender dates in news */
-  z-index: 2;
+  /* z-index: 2; */
   margin-left: 1.5em;
   margin-top: 2.5em;
   color: #ffffff;
