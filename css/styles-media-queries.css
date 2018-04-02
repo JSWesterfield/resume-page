@@ -1,19 +1,31 @@
 /* Set the background color of body to tan */
 body {
-    background-color: tan;
+    width: 100%;
   }
-  
-  /* On screens that are 992px or less, set the background color to blue */
-  @media screen and (max-width: 992px) {
-    body {
-      background-color: blue;
+
+    /* On screens that are 600px or less, set the background color to olive */
+    @media screen and (max-width: 500px) {     
+      ol.carousel-indicators {
+          display: none;     
+      }
+
+      div.card.weather-card {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+      }
+
+      div.row.boxes-row-one
+      , div.row.boxes-row-two {
+    
+      }
     }
-  }
-  
+
+
   /* On screens that are 600px or less, set the background color to olive */
   @media screen and (max-width: 600px) {
     body {
-      background-color: olive;
+      
     }
   }
 
@@ -52,6 +64,26 @@ body {
     .col-10 {width: 83.33%;}
     .col-11 {width: 91.66%;}
     .col-12 {width: 100%;}
+}
+
+  /* On screens that are 992px or less, set the background color to blue */
+  @media screen and (max-width: 992px) {
+    body {
+
+    }
+  }
+
+@media (max-width: $screen-xs-max) {
+  .col-xs-auto { width: auto; }
+}
+@media (min-width: $screen-sm-min) and (max-width: $screen-sm-max) {
+  .col-sm-auto { width: auto; }
+}
+@media (min-width: $screen-md-min) and (max-width: $screen-md-max) {
+  .col-md-auto { width: auto; }
+}
+@media (min-width: $screen-lg-min) {
+  .col-lg-auto { width: auto; }
 }
 
 /* NOTES */
