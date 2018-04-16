@@ -77,7 +77,7 @@
                 return false;
             }         
         }
-        console.log('This books does not exists, adding it now');
+        console.log('This books does not exist, adding it now');
         console.log(this.booksArray.push);
         this.booksArray.push(book);
         return true;
