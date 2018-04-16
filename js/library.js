@@ -64,6 +64,7 @@
         this._addBooks;
         this._getAuthors;
         this._getRandomAuthorName;
+        this._getBooksBy;
 
         return false;
     }
@@ -99,11 +100,11 @@
 
 
     // /* REMOVE AUTHOR */
-    Library.prototype._removeBookByAuthor = function(authorName) {
+    Library.prototype._removeBookByAuthor = function(author) {
          //set a flag for if the author was removed. If author was removed and 
          var j = 0;
         for(var i = this.booksArray.length - 1; i > -1; i--) {
-            if (this.booksArray[i].author == authorName) {
+            if (this.booksArray[i].author.toUpperCase() == author.toUpperCase()) {
                 console.log('We found a match! Lets get to splicing!');
                 this.booksArray.splice(i, 1);
                 j++
@@ -122,67 +123,87 @@
         if (this.booksArray.length <= 0 ) {
             return null;
         }
-        console.log('found a random book!');
 
         return this.booksArray[Math.floor(Math.random() * this.booksArray.length - 1)];
     };
 
+    /* GENERIC GETBOOKSBY function for reusability */
+    Library.prototype._getBooksBy = function(val, searchOn) { //val = 'string' && searchOn = property of the booksArray object
+        var tempArr = [];
+        for (var i ; i < this.booksArray.length; i++) {
+            if(this.booksArray[i][searchOn].indexOf(val) !== -1) {
+                tempArr.push(this.booksArray[i][searchOn]); //searchOn will be the author or title or whatever
+            }
+        }
+
+        return tempArr;
+    }
+      
     
     /* REMOVE BOOK BY TITLE */
     Library.prototype._getBookByTitle = function(title) {
-        var matchingTitlesArray = [];
-        for (var i = 0; i < this.booksArray.length; i++) {
-            if(RegExp(title.toUpperCase(), "i").test(this.booksArray[i].title.toUpperCase())) {
-                matchingTitlesArray.push(this.booksArray[i]);
+        var tempArr = [];
+        for(var i = 0; i < this.booksArray.length; i++)  {
+            if (this.booksArray[i].title.indexOf(title) !== -1) {
+                tempArr.push(this.booksArray[i]);
             }
         }
-        return matchingTitlesArray;
+
+        return tempArr;
     }; 
 
 
     /* GET BOOKS BY AUTHOR */
     Library.prototype._getBooksByAuthor = function(author) {
-        var authorMatchingArray = [];
-        // for(var i = 0; i < this.booksArray.length; i++) {
-        //     if(authorName.indexOf(this.booksArray[i]) !== -1){
+        // var authorMatchingArray = [];
+        
+        // for (var i = 0; i < this.booksArray.length; i++) {
+        //     if(RegExp(author.toUpperCase(), "i").test(this.booksArray[i].author.toUpperCase())) {
+        //         console.log('Found a match, adding your author now.');
         //         authorMatchingArray.push(this.booksArray[i]);
-        //         console.log('Found match, placing in authorArray');              
-        //     } 
+        //     }
         // }
-        for (var i = 0; i < this.booksArray.length; i++) {
-            if(RegExp(author.toUpperCase(), "i").test(this.booksArray[i].author.toUpperCase())) {
-                console.log('Found a match, adding your author now.');
-                authorMatchingArray.push(this.booksArray[i]);
+        // console.log('Were outside the for loop now.');
+        // return authorMatchingArray;
+
+        var tempArr = [];
+        for(var i=0; i< aBooks.length; i++) {
+            if(tempArr.indexOf(this.libBooks[i].author) === -1) {
+
             }
         }
-        console.log('Were outside the for loop now.');
-        return authorMatchingArray;
     };
 
     /* ADD BOOKS*/
     Library.prototype._addBooks = function(books) {
         //add books
-        var count = 0
-        for (var i = 0; i < books[i].length; i++) {
-            this._addBook(books[i]);
-            count++;
+    //     var count = 0
+    //     for (var i = 0; i < books[i].length; i++) {
+    //         this._addBook(books[i]);
+    //         count++;
+    //     }
+    //     return count;
+    // };
+    //Kyle's Example
+    //addBooks
+        var bookAdded = 0;
+        for(var i=0; i < this.booksArray.length; i++) {
+            if(this._addBook(this.booksArray[i])) {
+                bookAdded++;
+            };
         }
-        return count;
     };
 
     Library.prototype._getAuthors = function() {
         var authorArray = [];
         for (var i = 0; i < this.booksArray.length; i++) {
-            if(authorArray.indexOf(this.booksArray[i].author) === -1 ) {
-                authorArray.push(this.booksArray[i].author);
+            if(authorArray.indexOf(this.booksArray[i].author.toUpperCase()) === -1 ) {
+                authorArray.push(this.booksArray[i].author.toUpperCase());
             }
         }
         return authorArray;
     };
 
     Library.prototype._getRandomAuthorName = function() {
-        if(this.booksArray.length == 0) {
-            return null;
-        }
-        return this.booksArray[Math.floor(Math.random() * this.booksArray.length - 1)];
+        return this._getRandomBook().author;
     };
