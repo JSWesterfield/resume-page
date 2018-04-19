@@ -3,115 +3,164 @@
     <head>
         <meta charset="utf-8" />
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <title>Page Title</title>
+        <title>Libary of Alexandria</title>
         <meta name="viewport" content="width=device-width, initial-scale=1">
-        <link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">
+        <link rel="icon" href="assets/images/favicon-icon.png">
+        <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
         <link rel="stylesheet" type="text/css" media="screen" href="css/styles.css" />
         <link rel="stylesheet" type="text/css" media="screen" href="css/styles-form.css" />
         <link rel="stylesheet" type="text/css" media="screen" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.0.0/css/bootstrap.css" />
     </head>
 
     <body>
-        <div class="container-fluid">
-            <div class="form-container d-flex justify-content-center align-items-center">
-                <form class="form-horizontal" action="/action_page.php">
-                    <div class="form-group">
-                        <label class="control-label col-sm-2" for="email">Email:</label>
-                        <div class="col-sm-10">
-                        <input type="email" class="form-control" id="email" placeholder="Enter email">
-                        </div>
-                    </div>
-                    <div class="form-group">
-                        <label class="control-label col-sm-2" for="pwd">Password:</label>
-                        <div class="col-sm-10">
-                        <input type="password" class="form-control" id="pwd" placeholder="Enter password">
-                        </div>
-                    </div>
-                    <div class="form-group">
-                        <div class="col-sm-offset-2 col-sm-10">
-                        <div class="checkbox">
-                            <label><input type="checkbox"> Remember me</label>
-                        </div>
-                        </div>
-                    </div>
-                    <div class="form-group">
-                        <div class="col-sm-offset-2 col-sm-10">
-                        <!-- <button type="submit" class="btn btn-default">Submit Alert</button> -->
-                        <textarea></textarea>
+        <div class="container-fluid"> <!-- BOOTSTRAP CONTAINER FLUID STARTS-->
 
-                        <!-- Button trigger modal -->
-                        <button type="button" class="btn btn-primary modal-button" data-toggle="modal" data-target="#exampleModal">
-                          Launch demo modal
-                        </button>
-        
-                        </div>
-                    </div>
-                </form> 
-
-                <br>
-                <br>
-                <div>
-                    <div>
-                        <h4>Our Fidget Spinner</h4>
-                    </div>
-                    <br>
-                    <div class="cube-container">
-                        <div id="cube">
-                            <div class="front">1</div>
-                            <div class="back">2</div>
-                            <div class="right">3</div>
-                            <div class="left">4</div>
-                            <div class="top">5</div>
-                            <div class="bottom">6</div>
-                        </div>
-                    </div>
-                    <!-- End of cube div -->
-                </div>
+            <nav class="navbar navbar-expand-lg navbar-light bg-light navbar-fixed">
+                <a class="navbar-brand" href="#">
+                    <img src="assets/images/papyrus-scroll-icon.png" width="35" height="35" class="d-inline-block align-top" alt="">
+                    Library of Alexandria
+                </a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
                 
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav mr-auto">
+                        <li class="nav-item active">
+                            <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">About</a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            Find Omnibus
+                            </a>
+                            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                <a class="dropdown-item" href="#">Add Book</a>
+                                    <div class="dropdown-divider"></div>
+                                <a class="dropdown-item" href="#">Remove By Book Title</a>
+                                    <div class="dropdown-divider"></div>
+                                <a class="dropdown-item" href="#">Remove By Book Author</a>
+                                    <div class="dropdown-divider"></div>
+                                <a class="dropdown-item" href="#">Get Random Book</a>
+                                    <div class="dropdown-divider"></div>
+                                <a class="dropdown-item" href="#">Get Book By Title</a>
+                                    <div class="dropdown-divider"></div>
+                                <a class="dropdown-item" href="#">Get Book By Author</a>
+                                    <div class="dropdown-divider"></div>
+                                <a class="dropdown-item" href="#">Add Books</a>
+                                    <div class="dropdown-divider"></div>
+                                <a class="dropdown-item" href="#">Get Authors</a>
+                            </div>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="https://www.google.com/maps/@42.026908,-87.8012206,3a,75y,230.54h,92.96t/data=!3m7!1e1!3m5!1s6WAbXcUcwSEAAAQYN3TllA!2e0!3e2!7i13312!8i6656">Virtual Tour</a>
+                            <!-- <a class="nav-link" href="https://www.google.com/maps/@42.026908,-87.8012206,3a,75y,230.54h,92.96t/data=!3m7!1e1!3m5!1s6WAbXcUcwSEAAAQYN3TllA!2e0!3e2!7i13312!8i6656">Virtual Tour</a> -->
+                        </li>
+                    </ul>
+                    <form class="form-inline my-2 my-lg-0">
+                        <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+                        <button class="btn btn-outline-dark my-2 my-sm-0" type="submit">Search</button>
+                    </form>
+                </div>
+            </nav>
 
-            </div>  <!-- End of form container -->
-
-
-            <div>
-                <!-- Our initial Hidden Modal -->
-                <div class="modal fade modal-container" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" >
-                    <div class="modal-dialog" role="document">
-                        <div class="modal-content">
-                        <div class="modal-header">
+            <div class="form-sortable-container">
+                <div class="form-container d-flex justify-content-center align-items-center">
+                        <form class="form-horizontal" action="/action_page.php">
+                            <div class="form-group">
+                                <label class="control-label col-sm-2" for="email">Title:</label>
+                                <div class="col-sm-10">
+                                <input type="email" class="form-control" id="email" placeholder="Enter book title">
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <label class="control-label col-sm-2" for="pwd">Author:</label>
+                                <div class="col-sm-10">
+                                <input type="password" class="form-control" id="pwd" placeholder="Enter book author">
+                                </div>
+                            </div>
                             
-                            <button type="button" class="close modal-button" data-dismiss="modal" aria-label="Close">
-                            <span aria-hidden="true">&times;</span>
-                            </button>
+                            <div class="form-group">
+                                <div class="col-sm-offset-2 col-sm-10">
+                                <!-- <button type="submit" class="btn btn-default">Submit Alert</button> -->
+                                <textarea></textarea>
+        
+                                <!-- Button trigger modal -->
+                                <button type="button" class="btn btn-primary modal-button" data-toggle="modal" data-target="#exampleModal">
+                                    Launch search modal
+                                </button>
+                
+                                </div>
+                            </div>
+                        </form> 
+        
+                        <br>
+                        <br>
+                        <div>
+                            <div>
+                                <h4>Library Search Spinner</h4>
+                            </div>
+                            <br>
+                            <div class="cube-container">
+                                <div id="cube">
+                                    <div class="front">1</div>
+                                    <div class="back">2</div>
+                                    <div class="right">3</div>
+                                    <div class="left">4</div>
+                                    <div class="top">5</div>
+                                    <div class="bottom">6</div>
+                                </div>
+                            </div>
+                            <!-- End of cube div -->
                         </div>
-                        <div class="modal-body d-flex align-items-center justify-content-center">
-                            <h5 class="modal-title" id="exampleModalLabel">Our Modal Works!</h5>
-                            <p>Here have a tasty Tide Pod!</p>
-                            <img class="tide-pod-image" src="assets/images/tasty-tide-pod.jpg" alt="tide_pod_image">
-                        </div>
-                        <div class="modal-footer">
-                            <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-                            <button type="button" class="btn btn-primary">Save changes</button>
-                        </div>
-                        </div>
+                        
+        
+                    </div>  <!-- End of form container -->
+        
+        
+                    <div>
+                        <!-- Our initial Hidden Modal -->
+                        <div class="modal fade modal-container" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" >
+                            <div class="modal-dialog" role="document">
+                                <div class="modal-content">
+                                <div class="modal-header">
+                                    
+                                    <button type="button" class="close modal-button" data-dismiss="modal" aria-label="Close">
+                                    <span aria-hidden="true">&times;</span>
+                                    </button>
+                                </div>
+                                <div class="modal-body d-flex align-items-center justify-content-center">
+                                    <h5 class="modal-title" id="exampleModalLabel">Our Modal Works!</h5>
+                                    <p>Here have a tasty Tide Pod!</p>
+                                    <img class="tide-pod-image" src="assets/images/tasty-tide-pod.jpg" alt="tide_pod_image">
+                                </div>
+                                <div class="modal-footer">
+                                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                                    <button type="button" class="btn btn-primary">Save changes</button>
+                                </div>
+                                </div>
+                            </div>
+                        </div> 
+                        <!-- end of modal -->
                     </div>
-                </div> 
-                <!-- end of modal -->
-            </div>
+                    
+        
+                    <!-- Sortable list of library functions -->
+                    <ul id="sortable">
+                        <li class="ui-state-default d-flex justify-content-center"><span class="ui-icon ui-icon-arrowthick-2-n-s"></span>Library Function AddBook <img src="assets/images/book_stack.jpg" alt="book_stack"> </li>
+                        <li class="ui-state-default d-flex justify-content-center"><span class="ui-icon ui-icon-arrowthick-2-n-s"></span>Library Function removeBookByTitle <img src="assets/images/book_stack.jpg" alt="book_stack"> </li>
+                        <li class="ui-state-default d-flex justify-content-center"><span class="ui-icon ui-icon-arrowthick-2-n-s"></span>Library Function removeBookByAuthor <img src="assets/images/book_stack.jpg" alt="book_stack"> </li>
+                        <li class="ui-state-default d-flex justify-content-center"><span class="ui-icon ui-icon-arrowthick-2-n-s"></span>Library Function getRandomBook <img src="assets/images/book_stack.jpg" alt="book_stack"> </li>
+                        <li class="ui-state-default d-flex justify-content-center"><span class="ui-icon ui-icon-arrowthick-2-n-s"></span>Library Function getBookByTitle <img src="assets/images/book_stack.jpg" alt="book_stack"> </li>
+                        <li class="ui-state-default d-flex justify-content-center"><span class="ui-icon ui-icon-arrowthick-2-n-s"></span>Library Function getBookByAuthor <img src="assets/images/book_stack.jpg" alt="book_stack"> </li>
+                        <li class="ui-state-default d-flex justify-content-center"><span class="ui-icon ui-icon-arrowthick-2-n-s"></span>Library Function addBooks <img src="assets/images/book_stack.jpg" alt="book_stack"> </li>
+                        <li class="ui-state-default d-flex justify-content-center"><span class="ui-icon ui-icon-arrowthick-2-n-s"></span>Library Function getAuthors <img src="assets/images/book_stack.jpg" alt="book_stack"> </li>
+                    </ul>
+                        
+            </div> <!-- END of Form-sortable Container  -->
             
-
-            <!-- Sortable list of library functions -->
-            <ul id="sortable">
-                <li class="ui-state-default d-flex justify-content-center"><span class="ui-icon ui-icon-arrowthick-2-n-s"></span>Library Function #1 <img src="assets/images/book_stack.jpg" alt="book_stack"> </li>
-                <li class="ui-state-default d-flex justify-content-center"><span class="ui-icon ui-icon-arrowthick-2-n-s"></span>Library Function #2 <img src="assets/images/book_stack.jpg" alt="book_stack"> </li>
-                <li class="ui-state-default d-flex justify-content-center"><span class="ui-icon ui-icon-arrowthick-2-n-s"></span>Library Function #4 <img src="assets/images/book_stack.jpg" alt="book_stack"> </li>
-                <li class="ui-state-default d-flex justify-content-center"><span class="ui-icon ui-icon-arrowthick-2-n-s"></span>Library Function #3 <img src="assets/images/book_stack.jpg" alt="book_stack"> </li>
-                <li class="ui-state-default d-flex justify-content-center"><span class="ui-icon ui-icon-arrowthick-2-n-s"></span>Library Function #4 <img src="assets/images/book_stack.jpg" alt="book_stack"> </li>
-                <li class="ui-state-default d-flex justify-content-center"><span class="ui-icon ui-icon-arrowthick-2-n-s"></span>Library Function #5 <img src="assets/images/book_stack.jpg" alt="book_stack"> </li>
-                <li class="ui-state-default d-flex justify-content-center"><span class="ui-icon ui-icon-arrowthick-2-n-s"></span>Library Function #6 <img src="assets/images/book_stack.jpg" alt="book_stack"> </li>
-                <li class="ui-state-default d-flex justify-content-center"><span class="ui-icon ui-icon-arrowthick-2-n-s"></span>Library Function #7 <img src="assets/images/book_stack.jpg" alt="book_stack"> </li>
-            </ul>
-
-
         </div> <!-- End of container fluid -->
      
             <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
