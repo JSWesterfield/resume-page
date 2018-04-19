@@ -55,13 +55,13 @@
                             </div>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="https://www.google.com/maps/@42.026908,-87.8012206,3a,75y,230.54h,92.96t/data=!3m7!1e1!3m5!1s6WAbXcUcwSEAAAQYN3TllA!2e0!3e2!7i13312!8i6656">Virtual Tour</a>
+                            <a class="nav-link" target="_blank" href="https://www.google.com/maps/@42.026908,-87.8012206,3a,75y,230.54h,92.96t/data=!3m7!1e1!3m5!1s6WAbXcUcwSEAAAQYN3TllA!2e0!3e2!7i13312!8i6656">Virtual Tour</a>
                             <!-- <a class="nav-link" href="https://www.google.com/maps/@42.026908,-87.8012206,3a,75y,230.54h,92.96t/data=!3m7!1e1!3m5!1s6WAbXcUcwSEAAAQYN3TllA!2e0!3e2!7i13312!8i6656">Virtual Tour</a> -->
                         </li>
                     </ul>
                     <form class="form-inline my-2 my-lg-0">
                         <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
-                        <button class="btn btn-outline-dark my-2 my-sm-0" type="submit">Search</button>
+                        <button  class="btn btn-outline-dark my-2 my-sm-0" type="submit">Search</button>
                     </form>
                 </div>
             </nav>
@@ -149,7 +149,18 @@
         
                     <!-- Sortable list of library functions -->
                     <ul id="sortable">
-                        <li class="ui-state-default d-flex justify-content-center"><span class="ui-icon ui-icon-arrowthick-2-n-s"></span>Library Function AddBook <img src="assets/images/book_stack.jpg" alt="book_stack"> </li>
+                        <li class="ui-state-default d-flex justify-content-center"><div class="media">
+                                <div class="media-left">
+                                  <a href="#">
+                                    <img class="media-object" src="assets/images/book_stack.jpg" alt="book_stack">
+                                  </a>
+                                </div>
+                                <div class="media-body">
+                                  <h4 class="media-heading">Media heading</h4>
+                                  ...
+                                </div>
+                              </div>
+                              <span class="ui-icon ui-icon-arrowthick-2-n-s"></span>Library Function AddBook </li>
                         <li class="ui-state-default d-flex justify-content-center"><span class="ui-icon ui-icon-arrowthick-2-n-s"></span>Library Function removeBookByTitle <img src="assets/images/book_stack.jpg" alt="book_stack"> </li>
                         <li class="ui-state-default d-flex justify-content-center"><span class="ui-icon ui-icon-arrowthick-2-n-s"></span>Library Function removeBookByAuthor <img src="assets/images/book_stack.jpg" alt="book_stack"> </li>
                         <li class="ui-state-default d-flex justify-content-center"><span class="ui-icon ui-icon-arrowthick-2-n-s"></span>Library Function getRandomBook <img src="assets/images/book_stack.jpg" alt="book_stack"> </li>
