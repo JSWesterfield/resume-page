@@ -10,6 +10,7 @@
         <link rel="stylesheet" type="text/css" media="screen" href="css/styles.css" />
         <link rel="stylesheet" type="text/css" media="screen" href="css/styles-form.css" />
         <link rel="stylesheet" type="text/css" media="screen" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.0.0/css/bootstrap.css" />
+        
     </head>
 
     <body>
@@ -66,32 +67,47 @@
                 </div>
             </nav>
 
+            <!-- OUR FORM STARTS HERE -->
             <div class="form-sortable-container">
-                <div class="form-container d-flex justify-content-center align-items-center">
+                <div class="form-container d-flex justify-content-around align-items-center">
                         <form class="form-horizontal" action="/action_page.php">
                             <div class="form-group">
-                                <label class="control-label col-sm-2" for="email">Title:</label>
-                                <div class="col-sm-10">
-                                <input type="email" class="form-control" id="email" placeholder="Enter book title">
+                                <label class="control-label col-md-10 d-flex justify-content-between align-items-start" for="title">Title:</label>
+                                <div class="col-xs-4">
+                                    <input type="text" class="form-control title" placeholder="Enter book title"> <!-- We add the data input value of 'title' to be stored in this data value-->
                                 </div>
                             </div>
                             <div class="form-group">
-                                <label class="control-label col-sm-2" for="pwd">Author:</label>
-                                <div class="col-sm-10">
-                                <input type="password" class="form-control" id="pwd" placeholder="Enter book author">
+                                <label class="control-label col-md-10 d-flex justify-content-between align-items-start" for="author">Author:</label>
+                                <div class="col-xs-4">
+                                    <input type="text" class="form-control author" placeholder="Enter book author">
+                                </div>
+                            </div>
+
+                            <div class="form-group">
+                                <label class="control-label col-md-10 d-flex justify-content-between align-items-start" for="numPages">Number of Pages:</label>
+                                <div class="col-xs-4">
+                                    <input type="text" class="form-control numPages" placeholder="Enter Number of Pages">
                                 </div>
                             </div>
                             
                             <div class="form-group">
-                                <div class="col-sm-offset-2 col-sm-10">
-                                <!-- <button type="submit" class="btn btn-default">Submit Alert</button> -->
-                                <textarea></textarea>
-        
-                                <!-- Button trigger modal -->
-                                <button type="button" class="btn btn-primary modal-button" data-toggle="modal" data-target="#exampleModal">
-                                    Launch search modal
-                                </button>
-                
+                                <label class="control-label col-md-10 d-flex justify-content-between align-items-start" for="pubDate">Publish Date:</label>
+                                <div class="col-xs-4">
+                                    <input type="text" class="form-control pubDate" placeholder="Enter Publish Date">
+                                </div>
+                            </div>
+
+                            <div class="form-group">
+                                <div class="col-sm-10 d-flex justify-content-start">
+
+
+                                    <!-- Button submit -->
+                                    <button type="button" class="submit btn btn-primary d-flex justify-content-start align-content-start">
+                                        Submit
+                                    </button>
+
+
                                 </div>
                             </div>
                         </form> 
@@ -116,13 +132,12 @@
                             <!-- End of cube div -->
                         </div>
                         
-        
                     </div>  <!-- End of form container -->
         
         
                     <div>
                         <!-- Our initial Hidden Modal -->
-                        <div class="modal fade modal-container" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" >
+                        <div class="modal fade modal-container" tabindex="-1" id="exampleModalLabel" role="dialog" data-toggle="modal" aria-labelledby="exampleModalLabel" >
                             <div class="modal-dialog" role="document">
                                 <div class="modal-content">
                                 <div class="modal-header">
@@ -146,40 +161,281 @@
                         <!-- end of modal -->
                     </div>
                     
+
+
+                    <!-- SORTABLE CAROUSEL-->
+                    <div class="container-fluid">
+                        <h1 class="text-center mb-3">Library Selection</h1>
+                        <div id="myCarousel" class="carousel slide" data-ride="carousel">
+                            <div class="carousel-inner row w-100 mx-auto">
+                                <div class="carousel-item col-md-4 active">
+                                    <div class="card" style="max-width: 100%">
+                                        <img class="card-img-top img-fluid" src="assets/images/book-covers/Webp.net-resizeimage.jpg" alt="Card image cap">
+                                    <div class="card-body">
+                                        <p>
+                                            <span class="rating float-right">
+                                                <i class="fa fa-star" aria-hidden="true" style="color: yellow;"></i>
+                                                <i class="fa fa-star" aria-hidden="true" style="color: yellow;"></i>
+                                                <i class="fa fa-star" aria-hidden="true" style="color: yellow;"></i>
+                                                <i class="fa fa-star-o" aria-hidden="true"></i>
+                                                <i class="fa fa-star-o" aria-hidden="true"></i>
+                                            </span>
+                                        </p>
+                                        <h5 class="card-title">Hithchikers Guide<br> to The Galaxy</h5>
+                                        <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                                        <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="carousel-item col-md-4" style="">
+                                <div class="card" style="max-width: 18rem;max-height: 18rem;" >
+                                    <img class="card-img-top img-fluid" src="assets/images/book-covers/hitch-hikers.jpg" alt="Card image cap">
+                                <div class="card-body">
+                                    <p>
+                                        <span class="rating float-right">
+                                            <i class="fa fa-star" aria-hidden="true" style="color: yellow;"></i>
+                                            <i class="fa fa-star" aria-hidden="true" style="color: yellow;"></i>
+                                            <i class="fa fa-star" aria-hidden="true" style="color: yellow;"></i>
+                                            <i class="fa fa-star-o" aria-hidden="true"></i>
+                                            <i class="fa fa-star-o" aria-hidden="true"></i>
+                                        </span>
+                                    </p>
+                                    <h5 class="card-title">The Old Man <br> and The Sea</h5>
+                                    <h6 class="card-text">Ernest Hemingway</h6>
+                                    <p class="card-text">127 Pgs</p>
+
+                                    <p class="card-text"><small class="text-muted"> September 1st, 1952 02:20:30</small></p>
+                                </div>
+                                </div>
+                            </div>
+                            <div class="carousel-item col-md-4">
+                                <div class="card">
+                                    <img class="card-img-top img-fluid" src="assets/images/book-covers/the-hitchhikers-guide-to-the-galaxy-by-douglas-adams.jpg" alt="Card image cap">
+                                    <div class="card-body">
+                                        <h5 class="card-title">The Great <br> Gatsby</h5>
+                                        <h6 class="card-text">Scott Fitzgerald</h6>
+                                        <p class="card-text">423Pgs</p>
+
+                                        <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="carousel-item col-md-4">
+                                <div class="card">
+                                    <img class="card-img-top img-fluid" src="http://placehold.it/800x600/42ebf4/fff" alt="Card image cap">
+                                    <div class="card-body">
+                                        <h4 class="card-title">Card 4</h4>
+                                        <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                                        <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="carousel-item col-md-4">
+                                <div class="card">
+                                    <img class="card-img-top img-fluid" src="http://placehold.it/800x600/f49b41/fff" alt="Card image cap">
+                                    <div class="card-body">
+                                        <h4 class="card-title">Card 5</h4>
+                                        <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                                        <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="carousel-item col-md-4">
+                                <div class="card">
+                                    <img class="card-img-top img-fluid" src="http://placehold.it/800x600/f4f141/fff" alt="Card image cap">
+                                    <div class="card-body">
+                                        <h4 class="card-title">Card 6</h4>
+                                        <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                                        <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="carousel-item col-md-4">
+                                <div class="card">
+                                    <img class="card-img-top img-fluid" src="http://placehold.it/800x600/8e41f4/fff" alt="Card image cap">
+                                    <div class="card-body">
+                                        <h4 class="card-title">Card 7</h4>
+                                        <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                                        <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+                                    </div>
+                                </div>
+                            </div>
+                            </div>
+                            <a class="carousel-control-prev" href="#myCarousel" role="button" data-slide="prev">
+                            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                            <span class="sr-only">Previous</span>
+                            </a>
+                            <a class="carousel-control-next" href="#myCarousel" role="button" data-slide="next">
+                            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                            <span class="sr-only">Next</span>
+                            </a>
+                        </div>
+                        </div>
+
+
+
         
                     <!-- Sortable list of library functions -->
                     <ul id="sortable">
-                        <li class="ui-state-default d-flex justify-content-center"><div class="media">
-                                <div class="media-left">
-                                  <a href="#">
+
+                        <!-- ADD BOOK -->
+                        <li class="ui-state-default d-flex justify-content-center addBooks">
+                            <div class="media">
+                                <div class="media-left d-flex justify-content-center">
+                                    <p class="reminder-text">addBooks</p>
                                     <img class="media-object" src="assets/images/book_stack.jpg" alt="book_stack">
-                                  </a>
                                 </div>
                                 <div class="media-body">
-                                  <h4 class="media-heading">Media heading</h4>
-                                  ...
+                                    <h3 class="media-heading temp-title"><b>Title:</b></h3>
+                                    <p class="addBook-author">Author Name:</p>
+                                    <p class="addBook-numPages">Number Pages:</p>
+                                    <p class="addBook-pubDate">Publish Date:</p>
                                 </div>
-                              </div>
-                              <span class="ui-icon ui-icon-arrowthick-2-n-s"></span>Library Function AddBook </li>
-                        <li class="ui-state-default d-flex justify-content-center"><span class="ui-icon ui-icon-arrowthick-2-n-s"></span>Library Function removeBookByTitle <img src="assets/images/book_stack.jpg" alt="book_stack"> </li>
-                        <li class="ui-state-default d-flex justify-content-center"><span class="ui-icon ui-icon-arrowthick-2-n-s"></span>Library Function removeBookByAuthor <img src="assets/images/book_stack.jpg" alt="book_stack"> </li>
-                        <li class="ui-state-default d-flex justify-content-center"><span class="ui-icon ui-icon-arrowthick-2-n-s"></span>Library Function getRandomBook <img src="assets/images/book_stack.jpg" alt="book_stack"> </li>
-                        <li class="ui-state-default d-flex justify-content-center"><span class="ui-icon ui-icon-arrowthick-2-n-s"></span>Library Function getBookByTitle <img src="assets/images/book_stack.jpg" alt="book_stack"> </li>
-                        <li class="ui-state-default d-flex justify-content-center"><span class="ui-icon ui-icon-arrowthick-2-n-s"></span>Library Function getBookByAuthor <img src="assets/images/book_stack.jpg" alt="book_stack"> </li>
-                        <li class="ui-state-default d-flex justify-content-center"><span class="ui-icon ui-icon-arrowthick-2-n-s"></span>Library Function addBooks <img src="assets/images/book_stack.jpg" alt="book_stack"> </li>
-                        <li class="ui-state-default d-flex justify-content-center"><span class="ui-icon ui-icon-arrowthick-2-n-s"></span>Library Function getAuthors <img src="assets/images/book_stack.jpg" alt="book_stack"> </li>
+                                <span class="ui-icon ui-icon-arrowthick-2-n-s"></span> 
+                            </div>
+                        </li>
+
+                        <!-- REMOVE BOOK BY TITLE -->
+                        <li class="ui-state-default d-flex justify-content-center removeBookByTitle">
+                            <div class="media">
+                                <div class="media-left d-flex justify-content-center">
+                                        <p class="reminder-text">removeBookByTitle</p>
+                                    <img class="media-object" src="assets/images/book_stack.jpg" alt="book_stack">
+                                </div>
+                                <div class="media-body">
+                                    <h3 class="media-heading temp-title"><b>Title:</b></h3>
+                                    <p class="temp-author">Author Name:</p>
+                                    <p class="temp-numPages">Number Pages:</p>
+                                    <p class="temp-pubDate">Publish Date:</p>
+                                </div>
+                                <span class="ui-icon ui-icon-arrowthick-2-n-s"></span> 
+                            </div>
+                        </li>
+
+                        <!-- REMOVE BOOK BY AUTHOR-->
+                        <li class="ui-state-default d-flex justify-content-center removeBookByAuthor"> 
+                            <div class="media">
+                                <div class="media-left d-flex justify-content-center">
+                                    <p class="reminder-text">removeBookByAuthor</p>
+                                    <img class="media-object" src="assets/images/book_stack.jpg" alt="book_stack">
+                                </div>
+                                <div class="media-body">
+                                    <h3 class="media-heading temp-title"><b>Title:</b></h3>
+                                    <p class="temp-author">Author Name:</p>
+                                    <p class="temp-numPages">Number Pages:</p>
+                                    <p class="temp-pubDate">Publish Date:</p>
+                                </div>
+                                <span class="ui-icon ui-icon-arrowthick-2-n-s"></span> 
+                            </div>
+                        </li>
+
+                        <!-- GET RANDOM BOOK -->
+                        <li class="ui-state-default d-flex justify-content-center getRandomBook"> 
+                            <div class="media">
+                                <div class="media-left d-flex justify-content-center">
+                                    <p class="reminder-text">getRandomBook</p>
+                                    <img class="media-object" src="assets/images/book_stack.jpg" alt="book_stack">
+                                </div>
+                                <div class="media-body">
+                                    <h3 class="media-heading temp-title"><b>Title:</b></h3>
+                                    <p class="temp-author">Author Name:</p>
+                                    <p class="temp-numPages">Number Pages:</p>
+                                    <p class="temp-pubDate">Publish Date:</p>
+                                </div>
+                                <span class="ui-icon ui-icon-arrowthick-2-n-s"></span> 
+                            </div>
+                        </li>
+
+                        <!-- GET BOOK BY TITLE -->
+                        <li class="ui-state-default d-flex justify-content-center getBookByTitle"> 
+                            <div class="media">
+                                <div class="media-left d-flex justify-content-center">
+                                    <p class="reminder-text">getBookByTitle</p>
+                                    <img class="media-object" src="assets/images/book_stack.jpg" alt="book_stack">
+                                </div>
+                                <div class="media-body">
+                                    <h3 class="media-heading temp-title"><b>Title:</b></h3>
+                                    <p class="temp-author">Author Name:</p>
+                                    <p class="temp-numPages">Number Pages:</p>
+                                    <p class="temp-pubDate">Publish Date:</p>
+                                </div>
+                                <span class="ui-icon ui-icon-arrowthick-2-n-s"></span> 
+                            </div>
+                        </li>
+
+                        <!-- GET BOOK BY AUTHOR -->
+                        <li class="ui-state-default d-flex justify-content-center getBookByAuthor"> 
+                            <div class="media">
+                                <div class="media-left d-flex justify-content-center">
+                                    <p class="reminder-text">getBookByAuthor</p>
+                                    <img class="media-object" src="assets/images/book_stack.jpg" alt="book_stack">
+                                </div>
+                                <div class="media-body">
+                                    <h3 class="media-heading temp-title"><b>Title:</b></h3>
+                                    <p class="temp-author">Author Name:</p>
+                                    <p class="temp-numPages">Number Pages:</p>
+                                    <p class="temp-pubDate">Publish Date:</p>
+                                </div>
+                                <span class="ui-icon ui-icon-arrowthick-2-n-s"></span> 
+                            </div>
+                        </li>
+
+                        <!-- ADD BOOKS -->
+                        <li class="ui-state-default d-flex justify-content-center addBooks"> 
+                            <div class="media">
+                                <div class="media-left d-flex justify-content-center">
+                                    <p class="reminder-text">addBooks</p>
+                                    <img class="media-object" src="assets/images/book_stack.jpg" alt="book_stack">
+                                </div>
+                                <div class="media-body">
+                                    <h3 class="media-heading temp-title"><b>Title:</b></h3>
+                                    <p class="temp-author">Author Name:</p>
+                                    <p class="temp-numPages">Number Pages:</p>
+                                    <p class="temp-pubDate">Publish Date:</p>
+                                </div>
+                                <span class="ui-icon ui-icon-arrowthick-2-n-s"></span> 
+                            </div>
+                        </li>
+
+                        <!-- GET AUTHORS -->
+                        <li class="ui-state-default d-flex justify-content-center getAuthors"> 
+                            <div class="media">
+                                <div class="media-left d-flex justify-content-center">
+                                    <p class="reminder-text">getAuthors</p>
+                                    <img class="media-object" src="assets/images/book_stack.jpg" alt="book_stack">
+                                </div>
+                                <div class="media-body">
+                                    <h3 class="media-heading temp-title"><b>Title:</b></h3>
+                                    <p class="temp-author">Author Name:</p>
+                                    <p class="temp-numPages">Number Pages:</p>
+                                    <p class="temp-pubDate">Publish Date:</p>
+                                </div>
+                                <span class="ui-icon ui-icon-arrowthick-2-n-s"></span> 
+                            </div>
+                        </li>
                     </ul>
-                        
             </div> <!-- END of Form-sortable Container  -->
+
+
+
+            <!-- SORTABLE TABLE -->
+
+
+
+
+
+
             
         </div> <!-- End of container fluid -->
      
-            <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-            <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script> <!-- Our  -->
+            <script  src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+            <script  src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+
             <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.0.0/js/bootstrap.min.js"></script>
             <!-- <script src="js/cube.js"></script> -->
+            <script src="js/library.js"></script>            
             <script src="js/form.js"></script>
-            <script src="js/library.js"></script>
         
     </body>
 </html>

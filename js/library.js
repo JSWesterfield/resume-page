@@ -30,8 +30,10 @@ var book7 = new Book('A Clash of Kings', 'George R.R. Martin', 768, 'September 2
 var book8 = new Book('A Clash of Kings', 'George R.R. Martin Jr.', 768, 'September 21, 1998 16:10:22'); //duplicate title
 var book9 = new Book('The Sun Also Rises', 'Ernest Hemingway', 342, 'June 14, 1998 16:10:22'); 
 var book10 = new Book('The Alchemist', 'Paulo Coelho', 208, 'August 14, 1988 11:11:34');
-var book11 = new Book('Enders Game', 'Orson Scott Card', 324, 'April 27, 1985 06:00:30'); 
- 
+var book11 = new Book('Enders Game', 'Orson Scott Card', 324, 'April 27, 1985 06:00:30'); //Extra book to add on the first function
+var book12 = new Book('The Ultimate Hitchhikers Guide TO The Galaxy', 'Douglas Adams', 653, 'October, 1992 02:20:30');
+var book13 = new Book('The Old Man and The Sea', 'Douglas Adams', 653, 'October, 1992 02:20:30');
+
 
 //new instance of 'library'
 var jakeLibrary = new Library();
@@ -73,10 +75,23 @@ Library.prototype._addBook = function(book) {
 			console.log('This book exists in booksArray already, can not add your book: ');
 			console.log(this.booksArray[i]);
 			return false;
-		}         
+		}    
 	}
+
 	console.log('This books does not exists, adding it now');
-	console.log(this.booksArray.push);
+
+	//Set the values from these titles to 
+	var _title = $('.title').val();
+	var _author= $('.author').val();
+	var _numPages = $('.numPages').val();
+	var _pubDate = $('.pubDate').val();
+
+	/* Store our variable ALSO with the data object, by creating a data attribute to target a certain DOM element */
+	$('.temp-title').text(_title);  //Will set the location of the data to '.temp-title', or the template for our data. THEN
+	$('.temp-author').text(_author);
+	$('.temp-numPages').text(_numPages );
+	$('.temp-pubDate').text(_pubDate);
+
 	this.booksArray.push(book);
 	return true;
 };

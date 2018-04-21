@@ -1,12 +1,8 @@
 body {
     background-image: url('../assets/images/light-woodshelf.jpg');
     width: 100%;
-}
-
-.form-sortable-container {
-    margin-left: 18%;
-    margin-right: 18%;
-    margin-top: 2em;
+    z-index: 1;
+    position: relative;
 }
 
 .navbar-fixed {
@@ -16,37 +12,87 @@ body {
     width: 100%;
     height: 70px;
     opacity: 0.9;
-    border: 1px solid #1f1f1f;
+    border-bottom: 1px solid #525252;
     /* overflow: hidden;  // Hides the dropdown menu*/ 
+}
+
+/* FORM CSS */
+input[type=text]{
+    background: url('../assets/images/input-icon.png') 12px 11px no-repeat, linear-gradient(to bottom, #f7f7f8 0%,#ffffff 100%);
+    border-radius: 3px;
+    border: none;
+    box-shadow: 0 1px 2px rgba(0,0,0,0.2) inset, 0 -1px 0 rgba(0,0,0,0.05) inset;
+    transition: all 0.2s linear;
+    font-family: "Helvetica Neue", sans-serif;
+    font-size: 13px;
+    color: #222222;
+    position: relative;
+    height: 36px;
+    width: 300px;
+    padding-left: 30px;
+}
+
+input[type=text]:focus {
+    box-shadow: 0 1px 0 #2392F3 inset, 0 -1px 0 #2392F3 inset, 1px 0 0 #2392F3 inset, -1px 0 0 #2392F3 inset, 0 0 4px rgba(35,146,243,0.5);
+    outline: none;
+    background: url('../assets/images/input-icon.png') 12px 11px no-repeat, #FFF;
+}
+
+input[type=text]::-webkit-input-placeholder {
+    color: #999999;
+} 
+
+input[type=text]:-moz-placeholder {
+    color: #999999;
+}
+
+.form-sortable-container {
+    margin-left: 18%;
+    margin-right: 18%;
+    margin-top: 2em;
 }
 
 .navbar-fixed a:hover, .navbar-fixed:active {
     opacity: 1;
 }
 
-
-
 .form-container {
     border: 0.1em solid #ffffff;
     height: 450px;
+    color: white;
 }
 
 .form-container, #sortable, #cube {
     font-family: 'Open Sans', sans-serif;
 }
 
+.media-body > h3, .media-body > p {
+    margin-top: 0px!important;
+    margin-bottom: 0px!important;
+    padding: 0px;
+    margin-left: 1em!important;
+}
+
+.media-left > img {
+    margin: 1em;
+}
+
 .modal-container {
     display: none;
 }
 
-.modal-button, textarea {
-    margin-top: 0.8em;
+.modal-button {
+    margin-top: 0.1em;
+    margin-right: 0.4em;
 }
 
-.tide-pod-image {
-    width: 9em;
-    height: 9em;
-    box-shadow:  5px 7px 10px #a0a0a0;
+.submit-button-add {
+    margin-top: 0.1em;
+    margin-right: 0.4em;
+}
+
+.reminder-text {
+    font-size: 9px;
 }
 
 #sortable {
@@ -56,13 +102,24 @@ body {
     width: 100%; 
 }
 
+#sortable ul {
+    overflow-x: visible; 
+    overflow-y: visible; 
+}
+
 #sortable li { 
+    background-image: url('../assets/images/light-woodshelf.jpg'), linear-gradient(to bottom, #f7f7f8 0%,#ffffff 100%);
     margin: 0 3px 3px 3px; 
     padding: 0.4em; 
     padding-left: 1.5em; 
     font-size: 1.4em;
     border: 1px solid #ffffff;
     color: #ffffff;
+    filter: brightness(94%);
+    
+    overflow-x: visible; 
+    overflow-y: visible;
+    float: left;
 }
 
 #sortable li:active { 
@@ -72,7 +129,10 @@ body {
     font-size: 1.4em;
     border: 1px solid #ffffff;
     color: #ffffff;
-    box-shadow: 0px 0.5px 4px 2px #ffffff;
+    /*box-shadow: 0px 0.5px 4px 2px #ffffff; */
+    background: linear-gradient(to bottom right, rgba(250, 50, 50, 0.5), rgba(50, 150, 250, 0.5)), linear-gradient(to bottom left, blue 30px, transparent 150px);
+    box-shadow: inset 0 0 10px 5px #969696;
+    float: left;
 }
 
 #sortable li span { 
@@ -81,8 +141,8 @@ body {
 }
 
 #sortable li img {
-    width: 30px;
-    height: 30px;
+    width: 100px;
+    height: 100px;
     margin-left: 0.5em;
 }
 
@@ -188,3 +248,98 @@ body {
     -moz-transform: rotateX( -90deg ) translateZ( 100px );
 }
 
+
+
+/* CARD CAROUSEL*/
+@media (min-width: 768px) {
+    /* show 3 items */
+    .carousel-inner .active,
+    .carousel-inner .active + .carousel-item,
+    .carousel-inner .active + .carousel-item + .carousel-item {
+      display: block;
+    }
+  
+    .carousel-inner
+      .carousel-item.active:not(.carousel-item-right):not(.carousel-item-left),
+    .carousel-inner
+      .carousel-item.active:not(.carousel-item-right):not(.carousel-item-left)
+      + .carousel-item,
+    .carousel-inner
+      .carousel-item.active:not(.carousel-item-right):not(.carousel-item-left)
+      + .carousel-item
+      + .carousel-item {
+      transition: none;
+    }
+  
+    .carousel-inner .carousel-item-next,
+    .carousel-inner .carousel-item-prev {
+      position: relative;
+      transform: translate3d(0, 0, 0);
+    }
+  
+    .carousel-inner
+      .active.carousel-item
+      + .carousel-item
+      + .carousel-item
+      + .carousel-item {
+      position: absolute;
+      top: 0;
+      right: -33.3333%;
+      z-index: -1;
+      display: block;
+      visibility: visible;
+    }
+  
+    /* left or forward direction */
+    .active.carousel-item-left + .carousel-item-next.carousel-item-left,
+    .carousel-item-next.carousel-item-left + .carousel-item,
+    .carousel-item-next.carousel-item-left + .carousel-item + .carousel-item,
+    .carousel-item-next.carousel-item-left
+      + .carousel-item
+      + .carousel-item
+      + .carousel-item {
+      position: relative;
+      transform: translate3d(-100%, 0, 0);
+      visibility: visible;
+    }
+  
+    /* farthest right hidden item must be abso position for animations */
+    .carousel-inner .carousel-item-prev.carousel-item-right {
+      position: absolute;
+      top: 0;
+      left: 0;
+      z-index: -1;
+      display: block;
+      visibility: visible;
+    }
+
+    /* right or prev direction */
+    .active.carousel-item-right + .carousel-item-prev.carousel-item-right,
+    .carousel-item-prev.carousel-item-right + .carousel-item,
+    .carousel-item-prev.carousel-item-right + .carousel-item + .carousel-item,
+    .carousel-item-prev.carousel-item-right
+      + .carousel-item
+      + .carousel-item
+      + .carousel-item {
+      position: relative;
+      transform: translate3d(100%, 0, 0);
+      visibility: visible;
+      display: block;
+      visibility: visible;
+    }
+
+    .carousel-inner> .carousel-item> a > img, .carousel-inner>.carousel-item>img, .figure>img, .img-responsive {
+        max-width: 100%;
+        max-height: auto;
+        display: block;
+    }
+
+    .card > img {
+        max-width: 100%;
+        max-height: auto;
+        display: block;
+    }
+
+
+  }
+  
