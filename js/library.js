@@ -21,18 +21,18 @@ var Book = function(title, author, numPages, pubDate) {
 //book global instances, should I add a g to variable name?
 var book0 = new Book('The Great Gatsby', 'Scott Fitzgerald', 800, 'December 17, 1925 03:24:00'); 
 var book1 = new Book('Ready Player One', 'Ernest Cline', 385, 'August 16, 2011 08:33:00'); 
-var book2 = new Book('Do Androids Dream of Electric Sheep?', 'Phillip K. Dick', 210 , 'July 22, 1968 11:41:00');
-var book3 = new Book('Martian Chronicles', 'Ray Bradbury', 222, 'October 4 27, 1950 14:24:46');
+var book2 = new Book('The Wind-Up Bird Chronicle', 'Haruki Murakami', 607, 'August 25, 1995 11:41:00');
+var book3 = new Book('Martian Chronicles', 'Ray Bradbury', 222, 'October 03, 1950 14:24:46');
 var book4 = new Book('American Gods', 'Neil Gaiman', 465, 'June 19, 2001 10:43:11');  
-var book5 = new Book('Game of Thrones', 'George R.R. Martin', 694, 'March 15, 1997 04:28:30'); //duplicate authors
+var book5 = new Book('Planetfall', 'Emma Newman', 694, 'March 15, 2015 04:28:30'); //duplicate authors
 var book6 = new Book('A Brief History of Time', 'Stephen Hawking', 256, 'February 05, 1988 03:24:00'); 
 var book7 = new Book('A Clash of Kings', 'George R.R. Martin', 768, 'September 21, 1998 16:10:22'); //duplicate authors
 var book8 = new Book('A Clash of Kings', 'George R.R. Martin Jr.', 768, 'September 21, 1998 16:10:22'); //duplicate title
 var book9 = new Book('The Sun Also Rises', 'Ernest Hemingway', 342, 'June 14, 1998 16:10:22'); 
 var book10 = new Book('The Alchemist', 'Paulo Coelho', 208, 'August 14, 1988 11:11:34');
 var book11 = new Book('Enders Game', 'Orson Scott Card', 324, 'April 27, 1985 06:00:30'); //Extra book to add on the first function
-var book12 = new Book('The Ultimate Hitchhikers Guide TO The Galaxy', 'Douglas Adams', 653, 'October, 1992 02:20:30');
-var book13 = new Book('The Old Man and The Sea', 'Douglas Adams', 653, 'October, 1992 02:20:30');
+var book12 = new Book('The Ultimate Hitchhikers Guide TO The Galaxy', 'Douglas Adams', 653, 'October 15, 1992 02:20:30');
+var book13 = new Book('Dune', 'Frank Herbert', 412, 'October 23, 1965 02:20:30');
 
 
 //new instance of 'library'

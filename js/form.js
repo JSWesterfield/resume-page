@@ -15,6 +15,13 @@ $('.submit').on('click', function() {
             $("img > media-object")[0].html('https://openlibrary.org/isbn/' + result + 'M');
         }
     });
+
+    // $.ajax({
+    //     url: url,
+    //     data: data,
+    //     success: success,
+    //     dataType: dataType
+    // });
     var $addBooks = $('.addBooks');
     $addBooks.css("display", $addBooks.css("display") === 'none' ? '' : 'none');
 
