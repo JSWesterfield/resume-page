@@ -15,13 +15,6 @@ $('.submit').on('click', function() {
             $("img > media-object")[0].html('https://openlibrary.org/isbn/' + result + 'M');
         }
     });
-
-    // $.ajax({
-    //     url: url,
-    //     data: data,
-    //     success: success,
-    //     dataType: dataType
-    // });
     var $addBooks = $('.addBooks');
     $addBooks.css("display", $addBooks.css("display") === 'none' ? '' : 'none');
 
@@ -41,10 +34,10 @@ $('.submit').on('click', function() {
     var _pubDate = $('.pubDate').val();
 
     /* Store our variable ALSO with the data object, by creating a data attribute to target a certain DOM element */
-    $('.temp-title').text(_title);  //Will set the location of the data to '.temp-title', or the template for our data. THEN
-    $('.temp-author').text(_author);
-    $('.temp-numPages').text(_numPages );
-    $('.temp-pubDate').text(_pubDate);
+    $('.addBook-title').text(_title);  //Will set the location of the data to '.temp-title', or the template for our data. THEN
+    $('.addBook-author').text(_author);
+    $('.addBook-numPages').text(_numPages );
+    $('.addBook-pubDate').text(_pubDate);
 
     $('media-body > :input').remove();
 });

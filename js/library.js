@@ -25,14 +25,18 @@ var book2 = new Book('The Wind-Up Bird Chronicle', 'Haruki Murakami', 607, 'Augu
 var book3 = new Book('Martian Chronicles', 'Ray Bradbury', 222, 'October 03, 1950 14:24:46');
 var book4 = new Book('American Gods', 'Neil Gaiman', 465, 'June 19, 2001 10:43:11');  
 var book5 = new Book('Planetfall', 'Emma Newman', 694, 'March 15, 2015 04:28:30'); //duplicate authors
-var book6 = new Book('A Brief History of Time', 'Stephen Hawking', 256, 'February 05, 1988 03:24:00'); 
-var book7 = new Book('A Clash of Kings', 'George R.R. Martin', 768, 'September 21, 1998 16:10:22'); //duplicate authors
-var book8 = new Book('A Clash of Kings', 'George R.R. Martin Jr.', 768, 'September 21, 1998 16:10:22'); //duplicate title
-var book9 = new Book('The Sun Also Rises', 'Ernest Hemingway', 342, 'June 14, 1998 16:10:22'); 
-var book10 = new Book('The Alchemist', 'Paulo Coelho', 208, 'August 14, 1988 11:11:34');
+var book6 = new Book('Outliers: The Story of Success', 'Malcolm Gladwell', 304, 'February 05, 1988 03:24:00'); 
+var book7 = new Book('Children of Time', 'Adrian Tchaikovsky', 609, 'June 04, 2015 16:10:22'); 
+var book8 = new Book('The Alchemist', 'Paulo Coelho', 208, 'August 14, 1988 11:11:34');
 var book11 = new Book('Enders Game', 'Orson Scott Card', 324, 'April 27, 1985 06:00:30'); //Extra book to add on the first function
-var book12 = new Book('The Ultimate Hitchhikers Guide TO The Galaxy', 'Douglas Adams', 653, 'October 15, 1992 02:20:30');
+var book12 = new Book('The Ultimate Hitchhikers Guide To The Galaxy', 'Douglas Adams', 653, 'October 15, 1992 11:14:05');
 var book13 = new Book('Dune', 'Frank Herbert', 412, 'October 23, 1965 02:20:30');
+var book14 = new Book('Life of Pi', 'Yann Martel', 336, 'September 11, 2001 12:45:09');
+var book15 = new Book('All the Light We Cannot See', 'Anthony Doerr', 544, 'May 06, 2014 09:42:22');
+var book16 = new Book('Six Wakes', 'Mur Lafferty', 361, 'January 31, 2017 12:00:04');
+var book17 = new Book('Sleeping Giants', 'Sylvain Neuvel', 361, 'April 20, 2016 10:50:11');
+var book18 = new Book('Borne', 'Jeff VanderMeer', 336, 'April 24, 2017 06:39:07');
+
 
 
 //new instance of 'library'
